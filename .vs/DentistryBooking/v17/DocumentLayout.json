@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DentistryBooking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0784D5FB-41F8-421A-BD7A-40914AD288A2}|DentistryBooking\\DentistryBooking.csproj|d:\\dentistrybooking\\dentistrybooking\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0784D5FB-41F8-421A-BD7A-40914AD288A2}|DentistryBooking\\DentistryBooking.csproj|solutionrelative:dentistrybooking\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0784D5FB-41F8-421A-BD7A-40914AD288A2}|DentistryBooking\\DentistryBooking.csproj|d:\\dentistrybooking\\dentistrybooking\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0784D5FB-41F8-421A-BD7A-40914AD288A2}|DentistryBooking\\DentistryBooking.csproj|solutionrelative:dentistrybooking\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DentistryBooking\\DentistryBooking\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "DentistryBooking\\MainWindow.xaml",
+              "ToolTip": "D:\\DentistryBooking\\DentistryBooking\\MainWindow.xaml",
+              "RelativeToolTip": "DentistryBooking\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-14T05:53:25.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\DentistryBooking\\DentistryBooking\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DentistryBooking\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\DentistryBooking\\DentistryBooking\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "DentistryBooking\\MainWindow.xaml.cs*",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:53:25.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
