@@ -1,0 +1,15 @@
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Service.deps.json
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Service.dll
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Service.pdb
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Repository.dll
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Repository.pdb
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.dll
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\refint\Service.dll
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Service.pdb
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\ref\Service.dll

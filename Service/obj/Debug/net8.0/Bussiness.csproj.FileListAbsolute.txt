@@ -1,0 +1,15 @@
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Bussiness.deps.json
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Bussiness.dll
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Bussiness.pdb
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Repository.dll
+G:\fu\kif 5\prrn\projectPRN\Service\bin\Debug\net8.0\Repository.pdb
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.csproj.AssemblyReference.cache
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.AssemblyInfoInputs.cache
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.AssemblyInfo.cs
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.csproj.CoreCompileInputs.cache
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.csproj.Up2Date
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.dll
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\refint\Bussiness.dll
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\Bussiness.pdb
+G:\fu\kif 5\prrn\projectPRN\Service\obj\Debug\net8.0\ref\Bussiness.dll

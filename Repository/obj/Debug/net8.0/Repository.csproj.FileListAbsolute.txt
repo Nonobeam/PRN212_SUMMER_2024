@@ -1,0 +1,14 @@
+G:\fu\kif 5\prrn\projectPRN\Repository\bin\Debug\net8.0\Repository.deps.json
+G:\fu\kif 5\prrn\projectPRN\Repository\bin\Debug\net8.0\Repository.dll
+G:\fu\kif 5\prrn\projectPRN\Repository\bin\Debug\net8.0\Repository.pdb
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.dll
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\refint\Repository.dll
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.pdb
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\ref\Repository.dll
+G:\fu\kif 5\prrn\projectPRN\Repository\bin\Debug\net8.0\Repository.runtimeconfig.json
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+G:\fu\kif 5\prrn\projectPRN\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
