@@ -1,0 +1,52 @@
+﻿<Window x:Class="View.Customer.CustomerRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View.Customer"
+        mc:Ignorable="d"
+        Title="CustomerRegister" Height="450" Width="800">
+    <Grid Background="#F5F5F5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#2C3E50" Padding="20">
+            <TextBlock Text="Register" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Registration Form -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="0,0,20,0">
+                <TextBlock Height="37" Text="Name:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBlock Height="37" Text="Email:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
+                <TextBlock Height="37" Text="Phone:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
+                <TextBlock Height="37" Text="Password:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
+                <TextBlock Height="37" Text="Confirm Password:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <TextBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <TextBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <TextBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <PasswordBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <PasswordBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+
+            </StackPanel>
+        </Grid>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3"/>
+
+        <!-- Register Button -->
+        <Button Grid.Row="1" FontSize="18" Content="Register" Background="#2C3E50" Foreground="White" FontWeight="Bold" Padding="20,10" Margin="325,294,0,20" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="160">
+            
+        </Button>
+    </Grid>
+</Window>

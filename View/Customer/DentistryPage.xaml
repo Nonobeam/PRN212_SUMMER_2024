@@ -1,0 +1,63 @@
+﻿<Window x:Class="View.Customer.DentistryPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View.Customer"
+        mc:Ignorable="d"
+        Title="DentistryPage" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Tiêu đề -->
+        <TextBlock Text="Clinic And Service Information"
+               FontSize="24"
+               FontWeight="Bold"
+               Margin="10"
+               HorizontalAlignment="Center"
+               Foreground="#007ACC"/>
+        <ListView Grid.Column="0"
+              Margin="149,10,-1,10"
+              ItemsSource="{Binding Clinics}"
+              Background="#F0F0F0"
+              BorderBrush="#CCCCCC"
+              BorderThickness="1" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <ListView.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.141"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.825"/>
+                </TransformGroup>
+            </ListView.RenderTransform>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="130" Header="Clinic Name" DisplayMemberBinding="{Binding ClinicName}"/>
+                    <GridViewColumn Width="300" Header="Adress" DisplayMemberBinding="{Binding Address}"/>
+                    <GridViewColumn Width="100" Header="Phone" DisplayMemberBinding="{Binding Phone}"/>
+                    <GridViewColumn Width="120" Header="Manager" DisplayMemberBinding="{Binding ManagerName}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Danh sách dịch vụ -->
+        <ListView Grid.Row="1"
+              Margin="0,10,0,10"
+              ItemsSource="{Binding Services}"
+              Background="#E0F0FF"
+              BorderBrush="#CCCCCC"
+              BorderThickness="1" HorizontalAlignment="Left" Width="137">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="130" Header="Service" DisplayMemberBinding="{Binding ServiceName}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3"/>
+
+    </Grid>
+</Window>

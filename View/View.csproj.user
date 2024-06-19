@@ -7,6 +7,38 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Customer\AppointmentHistory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer\Booking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer\CustomerPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer\CustomerRegister.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer\DentistryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Customer\AppointmentHistory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer\Booking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer\CustomerPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer\CustomerRegister.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer\DentistryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
