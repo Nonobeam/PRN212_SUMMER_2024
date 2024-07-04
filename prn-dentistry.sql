@@ -3,6 +3,8 @@ GO
 /****** Object:  Database [prn_project]    Script Date: 7/4/2024 10:34:33 AM ******/
 CREATE DATABASE [prn_project]
  
+USE prn_project
+
 CREATE TABLE [dbo].[Admin](
 	[UserId] [int] NOT NULL,
 PRIMARY KEY CLUSTERED 
@@ -128,7 +130,7 @@ CREATE TABLE [dbo].[User](
 	[Phone] [nvarchar](15) NULL,
 	[Password] [nvarchar](255) NULL,
 	[UserType] [nvarchar](50) NULL,
-	[email] [varchar](225) NULL,
+	[email] [varchar](225) UNIQUE NULL,
 	[available] [int] NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
@@ -214,41 +216,41 @@ INSERT [dbo].[Time_slot] ([Id], [Time]) VALUES (13, CAST(N'20:00:00' AS Time))
 GO
 SET IDENTITY_INSERT [dbo].[User] ON 
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (1, N'John Doe', N'1234567890', N'password123', N'Customer', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (1, N'John Doe', N'1234567890', N'password123', N'Customer', 'example1@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (2, N'Jane Smith', N'9876543210', N'securepass', N'Customer', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (2, N'Jane Smith', N'9876543210', N'securepass', N'Customer', 'example2@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (3, N'Michael Johnson', N'5551234567', N'admin123', N'Manager', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (3, N'Michael Johnson', N'5551234567', N'admin123', N'Manager', 'example3@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (4, N'Emily Davis', N'7778889990', N'dentist456', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (4, N'Emily Davis', N'7778889990', N'dentist456', N'Dentist', 'example4@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (5, N'David Wilson', N'1112223333', N'manager789', N'Manager', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (5, N'David Wilson', N'1112223333', N'manager789', N'Manager', 'example5@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (6, N'Sophia Thompson', N'4445556666', N'patient123', N'Customer', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (6, N'Sophia Thompson', N'4445556666', N'patient123', N'Customer', 'example6@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (7, N'Daniel Anderson', N'7771112222', N'admin456', N'Admin', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (7, N'Daniel Anderson', N'7771112222', N'admin456', N'Admin', 'example7@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (8, N'John Smith', N'1234567890', N'password123', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (8, N'John Smith', N'1234567890', N'password123', N'Dentist', 'example8@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (9, N'Emily Davis', N'9876543210', N'dentist456', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (9, N'Emily Davis', N'9876543210', N'dentist456', N'Dentist', 'example9@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (10, N'Michael Johnson', N'5551234567', N'mjohnson', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (10, N'Michael Johnson', N'5551234567', N'mjohnson', N'Dentist', 'example10@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (11, N'Samantha Wilson', N'7778889990', N'swilson123', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (11, N'Samantha Wilson', N'7778889990', N'swilson123', N'Dentist', 'example11@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (12, N'David Thompson', N'1112223333', N'dthompson', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (12, N'David Thompson', N'1112223333', N'dthompson', N'Dentist', 'example12@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (13, N'Jessica Anderson', N'4445556666', N'janderson', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (13, N'Jessica Anderson', N'4445556666', N'janderson', N'Dentist', 'example13@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (14, N'Robert Brown', N'7771112222', N'rbrown456', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (14, N'Robert Brown', N'7771112222', N'rbrown456', N'Dentist', 'example14@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (15, N'Olivia Taylor', N'8889990000', N'otaylor123', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (15, N'Olivia Taylor', N'8889990000', N'otaylor123', N'Dentist', 'example15@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (16, N'William Clark', N'2223334444', N'wclark789', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (16, N'William Clark', N'2223334444', N'wclark789', N'Dentist', 'example16@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (17, N'Sophia Martinez', N'5556667777', N'smartinez', N'Dentist', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (17, N'Sophia Martinez', N'5556667777', N'smartinez', N'Dentist', 'example17@mail.com', 1)
 GO
-INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (18, N'Emma alley', N'3462634654', N'88888888', N'Manager', NULL, 1)
+INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (18, N'Emma alley', N'3462634654', N'88888888', N'Manager', 'example18@mail.com', 1)
 GO
 SET IDENTITY_INSERT [dbo].[User] OFF
 GO

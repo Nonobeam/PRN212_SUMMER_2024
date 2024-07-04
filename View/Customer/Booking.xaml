@@ -22,7 +22,7 @@
             <TextBlock Text="Appointment Booking" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </Border>
         <TextBlock Grid.Row="1" Text="Clinic:" Margin="10,0,10,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
-        <ComboBox x:Name="clinic" Grid.Row="1" Margin="762,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="22" Width="28" SelectionChanged="timeslot_SelectionChanged"/>
+        <ComboBox x:Name="clinic" Grid.Row="1" Margin="762,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="22" Width="28" SelectionChanged="Timeslot_SelectionChanged"/>
 
         <TextBlock Grid.Row="2" Text="Date:" Margin="10,0,10,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
         <DatePicker x:Name="date" Grid.Row="2" Margin="688,0,10,0" VerticalAlignment="Center" Height="24" SelectedDateChanged="DatePicker_SelectedDateChanged"/>

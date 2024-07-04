@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Admin\Dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\ManageAccount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Component\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Customer\AppointmentHistory.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +33,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Admin\Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin\ManageAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Component\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Customer\AppointmentHistory.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -37,9 +55,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Customer\DentistryPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

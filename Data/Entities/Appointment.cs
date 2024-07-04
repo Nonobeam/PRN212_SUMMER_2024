@@ -17,7 +17,7 @@ public partial class Appointment
 
     public int? ServiceId { get; set; }
 
-    public int? Clinicid { get; set; }
+    public int? ClinicId { get; set; }
 
     public int Available { get; set; }
 

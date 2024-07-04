@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\fu\kif 5\prrn\dentistry\DentistryBooking\View\obj\Debug\net8.0-windows\
+C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\obj\Debug\net8.0-windows\
 View
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-G:\fu\kif 5\prrn\dentistry\DentistryBooking\View\App.xaml
-62146648500
+C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\App.xaml
+81882398423
 
-11-1312636519
-246-1828161219
-Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;MainWindow.xaml;
+14-1326259261
+2501809198122
+Admin\Dashboard.xaml;Admin\ManageAccount.xaml;Component\Login.xaml;Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;
 
-False
+True
 

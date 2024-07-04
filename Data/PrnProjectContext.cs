@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace Data;
 
@@ -35,8 +36,21 @@ public partial class PrnProjectContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(local);Database=prn_project;UID=sa;PWD=1234567890;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer(GetConnectionString());
+
+    private string GetConnectionString()
+    {
+
+        var basePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"../../../../View"));
+        IConfiguration config = new ConfigurationBuilder()
+            .SetBasePath(basePath)
+            .AddJsonFile("appsettings.json", true, true)
+            .Build();
+
+        var strCon = config["ConnectionStrings:DefaultConnectionStringDB"];
+
+        return strCon;
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -63,11 +77,11 @@ public partial class PrnProjectContext : DbContext
             entity.Property(e => e.Available)
                 .HasDefaultValue(1)
                 .HasColumnName("available");
-            entity.Property(e => e.Clinicid).HasColumnName("clinicid");
+            entity.Property(e => e.ClinicId).HasColumnName("clinicid");
             entity.Property(e => e.TimeSlotId).HasColumnName("Time_slotId");
 
             entity.HasOne(d => d.Clinic).WithMany(p => p.Appointments)
-                .HasForeignKey(d => d.Clinicid)
+                .HasForeignKey(d => d.ClinicId)
                 .HasConstraintName("fk_clinic");
 
             entity.HasOne(d => d.Customer).WithMany(p => p.Appointments)
@@ -179,15 +193,17 @@ public partial class PrnProjectContext : DbContext
 
             entity.Property(e => e.Available)
                 .HasDefaultValue(1)
-                .HasColumnName("available");
+                .HasColumnName("Available");
             entity.Property(e => e.Email)
                 .HasMaxLength(225)
                 .IsUnicode(false)
-                .HasColumnName("email");
+                .HasColumnName("Email");
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Password).HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(15);
             entity.Property(e => e.UserType).HasMaxLength(50);
+
+            entity.HasIndex(e => e.Email).IsUnique();
         });
 
         OnModelCreatingPartial(modelBuilder);

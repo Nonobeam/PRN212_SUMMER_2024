@@ -1,12 +1,5 @@
 ﻿using Data.Entities;
 using Data.Repository;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Service
 {
     public class BookingService
@@ -15,7 +8,7 @@ namespace Service
         private ServiceRepository serviceRepository;
         private AppointmentRepository appointmentRepository;
         private ClinicRepository clinicRepository;
-        private UserRepository userRepository
+        private UserRepository userRepository;
         private static BookingService instance;
 
         public BookingService()
