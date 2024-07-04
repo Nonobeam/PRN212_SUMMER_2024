@@ -15,6 +15,10 @@ public partial class User
 
     public string? UserType { get; set; }
 
+    public string? Email { get; set; }
+
+    public int Available { get; set; }
+
     public virtual Admin? Admin { get; set; }
 
     public virtual Customer? Customer { get; set; }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\View\App.xaml
-11407045341
+62146648500
 
-4-1049127674
+9-1644549884
 246-1828161219
-MainWindow.xaml;
+Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;MainWindow.xaml;
 
-False
+True
 

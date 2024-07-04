@@ -1,27 +1,317 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\customerregister.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\customerregister.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\customerregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\customerregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\dentistrypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\dentistrypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6029836E-F420-494E-82CB-D4DABB78DDB2}|Service\\Service.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6029836E-F420-494E-82CB-D4DABB78DDB2}|Service\\Service.csproj|solutionrelative:service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\appointmenthistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\appointmenthistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\appointmenthistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\appointmenthistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\itimeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\itimeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\booking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\booking.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\view\\customer\\booking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\customer\\booking.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\iappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\iappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\clinicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\clinicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\iclinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\iclinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|g:\\fu\\kif 5\\prrn\\dentistry\\dentistrybooking\\data\\repository\\timeslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\repository\\timeslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 20,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DentistryPage.xaml",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\DentistryPage.xaml",
+              "RelativeDocumentMoniker": "View\\Customer\\DentistryPage.xaml",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\DentistryPage.xaml",
+              "RelativeToolTip": "View\\Customer\\DentistryPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-02T12:21:01.491Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerRegister.xaml.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\CustomerRegister.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Customer\\CustomerRegister.xaml.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\CustomerRegister.xaml.cs",
+              "RelativeToolTip": "View\\Customer\\CustomerRegister.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T12:12:48.906Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerRegister.xaml",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\CustomerRegister.xaml",
+              "RelativeDocumentMoniker": "View\\Customer\\CustomerRegister.xaml",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\CustomerRegister.xaml",
+              "RelativeToolTip": "View\\Customer\\CustomerRegister.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-01T12:08:24.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Service\\BookingService.cs",
+              "RelativeDocumentMoniker": "Service\\BookingService.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Service\\BookingService.cs",
+              "RelativeToolTip": "Service\\BookingService.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAwwFsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T12:01:10.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "Data\\Entities\\Appointment.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Entities\\Appointment.cs",
+              "RelativeToolTip": "Data\\Entities\\Appointment.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T09:52:34.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppointmentHistory.xaml",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\AppointmentHistory.xaml",
+              "RelativeDocumentMoniker": "View\\Customer\\AppointmentHistory.xaml",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\AppointmentHistory.xaml",
+              "RelativeToolTip": "View\\Customer\\AppointmentHistory.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-01T07:33:57.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppointmentHistory.xaml.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\AppointmentHistory.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Customer\\AppointmentHistory.xaml.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\AppointmentHistory.xaml.cs",
+              "RelativeToolTip": "View\\Customer\\AppointmentHistory.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwEMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T07:33:54.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\UserRepository.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAUwCAAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T07:09:04.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\AppointmentRepository.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\AppointmentRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\AppointmentRepository.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAADwvyYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T03:05:37.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITimeslotService.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\ITimeslotService.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\ITimeslotService.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\ITimeslotService.cs",
+              "RelativeToolTip": "Data\\Repository\\ITimeslotService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T03:28:42.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Booking.xaml.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\Booking.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Customer\\Booking.xaml.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\Booking.xaml.cs",
+              "RelativeToolTip": "View\\Customer\\Booking.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T03:04:32.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Booking.xaml",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\Booking.xaml",
+              "RelativeDocumentMoniker": "View\\Customer\\Booking.xaml",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\View\\Customer\\Booking.xaml",
+              "RelativeToolTip": "View\\Customer\\Booking.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-30T02:56:46.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAppointment.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IAppointment.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\IAppointment.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IAppointment.cs",
+              "RelativeToolTip": "Data\\Repository\\IAppointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T03:05:18.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\ServiceRepository.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\ServiceRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\ServiceRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T06:43:06.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IUser.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\IUser.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IUser.cs",
+              "RelativeToolTip": "Data\\Repository\\IUser.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAsAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T07:08:02.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClinicRepository.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\ClinicRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\ClinicRepository.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\ClinicRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\ClinicRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T03:23:07.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IClinic.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IClinic.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\IClinic.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IClinic.cs",
+              "RelativeToolTip": "Data\\Repository\\IClinic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T03:24:19.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IService.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IService.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\IService.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\IService.cs",
+              "RelativeToolTip": "Data\\Repository\\IService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T06:41:25.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TimeslotRepository.cs",
+              "DocumentMoniker": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\TimeslotRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\TimeslotRepository.cs",
+              "ToolTip": "G:\\fu\\kif 5\\prrn\\dentistry\\DentistryBooking\\Data\\Repository\\TimeslotRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\TimeslotRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T03:29:12.363Z"
             }
           ]
         }

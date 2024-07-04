@@ -19,9 +19,18 @@ namespace View.Customer
     /// </summary>
     public partial class CustomerRegister : Window
     {
+
         public CustomerRegister()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(username!= null && mail != null && phone !=null && password !=null && confirmPassword != null)
+            {
+
+            }
         }
     }
 }

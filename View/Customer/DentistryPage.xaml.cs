@@ -19,8 +19,11 @@ namespace View.Customer
     /// </summary>
     public partial class DentistryPage : Window
     {
-        public DentistryPage()
+        private static Data.Entities.Customer customer;
+
+        public DentistryPage(Data.Entities.Customer _customer)
         {
+            customer = _customer;
             InitializeComponent();
         }
     }

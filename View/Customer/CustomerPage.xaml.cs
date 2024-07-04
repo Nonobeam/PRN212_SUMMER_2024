@@ -19,30 +19,38 @@ namespace View.Customer
     /// </summary>
     public partial class CustomerPage : Window
     {
-        public CustomerPage()
+        private static Data.Entities.Customer customer;
+        public CustomerPage(Data.Entities.Customer _customer)
         {
+            customer = _customer;
             InitializeComponent();
         }
 
         private void clinic_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            DentistryPage dentistryPage = new DentistryPage();
+            DentistryPage dentistryPage = new DentistryPage(customer);
             dentistryPage.Show();
         }
 
         private void booking_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            Booking bookingPage = new Booking();
+            Booking bookingPage = new Booking(customer);
             bookingPage.Show();
         }
 
         private void history_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            AppointmentHistory appointmentHistory = new AppointmentHistory();
+            AppointmentHistory appointmentHistory = new AppointmentHistory(customer);
             appointmentHistory.Show();
         }
+
+        private void logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

@@ -34,19 +34,19 @@
             </StackPanel>
 
             <StackPanel Grid.Column="1">
-                <TextBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
-                <TextBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
-                <TextBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
-                <PasswordBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
-                <PasswordBox Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <TextBox x:Name="username" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <TextBox x:Name="mail" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <TextBox x:Name="phone" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <PasswordBox x:Name="password"  Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
+                <PasswordBox x:Name="confirmPassword" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
 
             </StackPanel>
+            
         </Grid>
         <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3"/>
 
-        <!-- Register Button -->
-        <Button Grid.Row="1" FontSize="18" Content="Register" Background="#2C3E50" Foreground="White" FontWeight="Bold" Padding="20,10" Margin="325,294,0,20" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="160">
-            
-        </Button>
+        <Button x:Name="register" Grid.Row="1" FontSize="18" Content="Register" Background="#2C3E50" Foreground="White" FontWeight="Bold" Padding="20,10" Margin="325,294,0,20" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="160" />
+
+
     </Grid>
 </Window>

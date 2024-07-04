@@ -13,3 +13,4 @@ G:\fu\kif 5\prrn\dentistry\DentistryBooking\Service\obj\Debug\net8.0\Service.dll
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\Service\obj\Debug\net8.0\refint\Service.dll
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\Service\obj\Debug\net8.0\Service.pdb
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\Service\obj\Debug\net8.0\ref\Service.dll
+G:\fu\kif 5\prrn\dentistry\DentistryBooking\Service\obj\Debug\net8.0\Service.sourcelink.json

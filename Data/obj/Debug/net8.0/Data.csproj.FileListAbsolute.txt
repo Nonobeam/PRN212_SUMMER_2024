@@ -12,3 +12,4 @@ G:\fu\kif 5\prrn\dentistry\DentistryBooking\Data\obj\Debug\net8.0\refint\Data.dl
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\Data\obj\Debug\net8.0\Data.pdb
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 G:\fu\kif 5\prrn\dentistry\DentistryBooking\Data\obj\Debug\net8.0\ref\Data.dll
+G:\fu\kif 5\prrn\dentistry\DentistryBooking\Data\obj\Debug\net8.0\Data.sourcelink.json
