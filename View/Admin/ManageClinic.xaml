@@ -3,13 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:View.Admin"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="ManageClinic" Height="800" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -18,7 +16,7 @@
         <!-- Header -->
         <Border Grid.Row="0" Background="#007ACC" Padding="10" Height="52" VerticalAlignment="Top">
             <DockPanel LastChildFill="True">
-                <Button x:Name="Back" Content="Back" Width="84" Height="32" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="back_Click" DockPanel.Dock="Left" Margin="5,0"/>
+                <Button x:Name="Back" Content="Back" Width="84" Height="32" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click" DockPanel.Dock="Left" Margin="5,0"/>
                 <Button x:Name="Clinic" Content="Clinic" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Clinic_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 <Button x:Name="Dashboard" Content="Dashboard" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Dashboard_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 <Button x:Name="Account" Content="Account" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Account_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
@@ -45,54 +43,20 @@
             <Button Name="SearchButton" Grid.Column="4" Content="Search" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="SearchButton_Click"/>
         </Grid>
 
-        <!-- Update, Add -->
-        <Grid Grid.Row="2" Margin="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-
-            </Grid.ColumnDefinitions>
-
-            <!-- First Row -->
-            <TextBlock Text="Name:" Grid.Column="0" VerticalAlignment="Center" Foreground="#007ACC" Margin="64,0,65,0" Width="40"/>
-            <TextBox x:Name="newName" Grid.Row="1" VerticalAlignment="Center" Margin="1,0,10,0"/>
-
-            <TextBlock Grid.Row="0" Grid.Column="2" Text="Phone:" VerticalAlignment="Center" Foreground="#007ACC" Margin="10,0" Width="40"/>
-            <TextBox x:Name="newPhone" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="10,0,10,0"/>
-
-            <TextBlock Grid.Column="3" Text="Address:" VerticalAlignment="Center" Foreground="#007ACC" Margin="93,0,94,0"/>
-            <TextBox x:Name="newAddress" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Margin="15,0,10,0"/>
-
-            <Button Name="AddButton" Grid.Row="0" Grid.Column="6" Content="Add" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="AddButton_Click"/>
-
-            <!-- Second Row -->
-            <TextBlock Text="Manager ID:" Grid.Column="1" VerticalAlignment="Center" Foreground="#007ACC" Margin="84,0,84,0" RenderTransformOrigin="0.525,0.762"/>
-            <TextBox x:Name="newManagerId" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="10,0,10,0"/>
-
-            <Button Name="UpdateButton" Grid.Row="1" Grid.Column="6" Content="Update" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="UpdateButton_Click"/>
-        </Grid>
-
         <!-- Clinic List -->
-        <ListView x:Name="ClinicTable" Grid.Row="3" SelectionChanged="ClinicTable_SelectionChanged" ItemsSource="{Binding Clinic}" Height="588" VerticalAlignment="Center">
+        <ListView x:Name="ClinicTable" Grid.Row="2" SelectionChanged="ClinicTable_SelectionChanged" ItemsSource="{Binding Clinic}" Height="631" VerticalAlignment="Top" Margin="0,10,0,0">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="80" Header="ID" DisplayMemberBinding="{Binding Id}"/>
                     <GridViewColumn Width="250" Header="Name" DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Width="250" Header="Address" DisplayMemberBinding="{Binding Address}"/>
-                    <GridViewColumn Width="80" Header="Phone" DisplayMemberBinding="{Binding Phone}"/>
-                    <GridViewColumn Width="80" Header="Manager ID" DisplayMemberBinding="{Binding ManagerId}"/>
-                    <GridViewColumn Width="80" Header="Available" DisplayMemberBinding="{Binding Available}"/>
-                    <GridViewColumn Width="160" Header="Delete">
+                    <GridViewColumn Width="200" Header="Phone" DisplayMemberBinding="{Binding Phone}"/>
+                    <GridViewColumn Width="100" Header="Manager ID" DisplayMemberBinding="{Binding ManagerId}"/>
+                    <GridViewColumn Width="140" Header="Available" DisplayMemberBinding="{Binding Available}"/>
+                    <GridViewColumn Width="160" Header="View">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Name="DeleteButton" Grid.Row="1" Grid.Column="6" Content="Delete" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="DeleteButton_Click"/>
+                                <Button Name="ViewButton" Grid.Row="1" Grid.Column="6" Content="Delete" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="ViewButton_Click"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>

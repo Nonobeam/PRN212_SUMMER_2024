@@ -22,7 +22,7 @@
                 <Button x:Name="Clinic" Content="Clinic" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Clinic_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 <Button x:Name="Dashboard" Content="Dashboard" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Dashboard_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 <Button x:Name="Account" Content="Account" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Account_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
-                <TextBlock Text="Clinic Management" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top"/>
+                <TextBlock Text="Account Management" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top"/>
             </DockPanel>
         </Border>
 

@@ -13,18 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\view\\admin\\manageaccount.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\admin\\manageaccount.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\view\\admin\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\admin\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\view\\admin\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\admin\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\view\\admin\\manageaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\admin\\manageaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageAccount.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageAccount.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Admin\\ManageAccount.xaml.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageAccount.xaml.cs",
+              "RelativeToolTip": "View\\Admin\\ManageAccount.xaml.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T10:52:20.462Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -49,7 +50,7 @@
               "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageClinic.xaml",
               "RelativeToolTip": "View\\Admin\\ManageClinic.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T09:42:31.871Z",
+              "WhenOpened": "2024-07-05T10:52:09.299Z",
               "EditorCaption": ""
             },
             {
@@ -60,59 +61,9 @@
               "RelativeDocumentMoniker": "View\\Admin\\ManageClinic.xaml.cs",
               "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageClinic.xaml.cs",
               "RelativeToolTip": "View\\Admin\\ManageClinic.xaml.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwFIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T09:41:51.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\Dashboard.xaml.cs",
-              "RelativeDocumentMoniker": "View\\Admin\\Dashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\Dashboard.xaml.cs",
-              "RelativeToolTip": "View\\Admin\\Dashboard.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAnwBoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T09:41:24.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "View\\Admin\\Dashboard.xaml",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\Dashboard.xaml",
-              "RelativeToolTip": "View\\Admin\\Dashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T09:41:13.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManageAccount.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageAccount.xaml.cs",
-              "RelativeDocumentMoniker": "View\\Admin\\ManageAccount.xaml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageAccount.xaml.cs",
-              "RelativeToolTip": "View\\Admin\\ManageAccount.xaml.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAnwKYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T09:40:58.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ManageAccount.xaml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageAccount.xaml",
-              "RelativeDocumentMoniker": "View\\Admin\\ManageAccount.xaml",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\Admin\\ManageAccount.xaml",
-              "RelativeToolTip": "View\\Admin\\ManageAccount.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T09:23:22.289Z",
+              "WhenOpened": "2024-07-05T10:50:48.49Z",
               "EditorCaption": ""
             }
           ]

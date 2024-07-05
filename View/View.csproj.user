@@ -13,7 +13,7 @@
     <Compile Update="Admin\ManageAccount.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\ManageClinic.xaml.cs">
+    <Compile Update="Component\ClinicInformation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Component\Login.xaml.cs">
@@ -43,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\ManageClinic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Component\ClinicInformation.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Component\Login.xaml">
