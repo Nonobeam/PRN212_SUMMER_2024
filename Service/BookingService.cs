@@ -43,7 +43,7 @@ namespace Service
 
         public IEnumerable<Clinic> GetAllClinic()
         {
-            IEnumerable<Clinic> clinics = clinicRepository.GetAll();
+            IEnumerable<Clinic> clinics = clinicRepository.GetAllClinics();
             return clinics;
         }
 

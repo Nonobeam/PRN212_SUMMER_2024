@@ -21,7 +21,7 @@ GO
 CREATE TABLE [dbo].[Appointment](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Date] [date] NULL,
-	[Time_slotId] [int] NULL,
+	[Time_slotId] [int] UNIQUE NULL,
 	[CustomerId] [int] NULL,
 	[DentistId] [int] NULL,
 	[ServiceId] [int] NULL,

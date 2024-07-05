@@ -178,3 +178,5 @@ C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\bin\Debug\net8.0-wi
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\bin\Debug\net8.0-windows\OxyPlot.Wpf.dll
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\bin\Debug\net8.0-windows\OxyPlot.Wpf.Shared.dll
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\obj\Debug\net8.0-windows\Admin\Dashboard.baml
+C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\obj\Debug\net8.0-windows\Admin\ManageClinic.g.cs
+C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\obj\Debug\net8.0-windows\Admin\ManageClinic.baml

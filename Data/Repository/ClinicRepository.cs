@@ -9,11 +9,11 @@ namespace Data.Repository
 {
     public class ClinicRepository : IClinic
     {
-        private PrnProjectContext prnProjectContext;
-        public ClinicRepository()
-        {
-        }
+        private PrnProjectContext _context;
         private static ClinicRepository instance;
+
+        public ClinicRepository(){}
+        
         public static ClinicRepository GetInstance()
         {
             if (instance == null)
@@ -22,15 +22,39 @@ namespace Data.Repository
             }
             return instance;
         }
+
+
         public ClinicRepository(PrnProjectContext context)
         {
-            prnProjectContext = context;
+            _context = context;
         }
 
-        public IEnumerable<Clinic> GetAll()
+
+        public IEnumerable<Clinic> GetAllClinics()
         {
-            prnProjectContext = new();
-            return prnProjectContext.Clinics.ToList();
+            _context = new();
+            return _context.Clinics.ToList();
+        }
+
+        public void AddClinic(Clinic clinic)
+        {
+            _context = new();
+            _context.Add(clinic);
+        }
+
+        public int ChangeClinicAvailable(int id, int available)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                var clinic = context.Clinics.FirstOrDefault(u => u.Id == id);
+                if (clinic != null)
+                {
+                    clinic.Available = available;
+                    context.Clinics.Update(clinic);
+                    return context.SaveChanges();
+                }
+            }
+            return 0;
         }
     }
 }

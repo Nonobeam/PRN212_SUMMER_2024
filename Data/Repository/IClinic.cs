@@ -9,6 +9,6 @@ namespace Data.Repository
 {
     internal interface IClinic
     {
-        IEnumerable<Clinic> GetAll();
+        IEnumerable<Clinic> GetAllClinics();
     }
 }

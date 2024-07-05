@@ -152,5 +152,19 @@ namespace View.Admin
             dashboard.Show();
             this.Close();
         }
+
+        private void Clinic_Click(object sender, RoutedEventArgs e)
+        {
+            ManageClinic clinic = new();
+            clinic.Show();
+            this.Close();
+        }
+
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            ManageAccount account = new();
+            account.Show();
+            this.Close();
+        }
     }
 }

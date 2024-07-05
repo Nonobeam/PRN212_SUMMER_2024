@@ -119,6 +119,8 @@ public partial class PrnProjectContext : DbContext
             entity.HasOne(d => d.Manager).WithMany(p => p.Clinics)
                 .HasForeignKey(d => d.ManagerId)
                 .HasConstraintName("FK__Clinic__ManagerI__4316F928");
+
+            entity.HasIndex(e => e.Address).IsUnique();
         });
 
         modelBuilder.Entity<Customer>(entity =>
