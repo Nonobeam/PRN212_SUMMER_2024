@@ -22,9 +22,14 @@ namespace View.Customer
     /// </summary>
     public partial class Booking : Window
     {
-        private static Data.Entities.Customer customer;
+        private static User customer;
         private BookingService bookingService;
-        public Booking(Data.Entities.Customer _customer)
+
+        public Booking()
+        {
+        }
+
+        public Booking(User _customer)
         {
             customer = _customer;
             InitializeComponent();
@@ -102,7 +107,7 @@ namespace View.Customer
                 appointment.ServiceId = serviceSelection.Id;
                 appointment.DentistId = dentistSelection.UserId;
                 appointment.ClinicId = clinicSeletion.Id;
-                appointment.CustomerId = customer.UserId;
+                appointment.CustomerId = customer.Id;
                 appointment.TimeSlotId = timeSlotSelection.Id;
                 bookingService.MakeAppointment(appointment);
                 this.Close();

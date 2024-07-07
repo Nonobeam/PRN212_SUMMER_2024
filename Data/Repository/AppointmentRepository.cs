@@ -51,10 +51,10 @@ namespace Data.Repository
             _context.SaveChanges();
         }
 
-        public IEnumerable<Appointment> GetAppointmentByCustomer(Customer customer)
+        public IEnumerable<Appointment> GetAppointmentByCustomer(User customer)
         {
             _context = new();
-            return _context.Appointments.Where(a => a.CustomerId == customer.UserId).ToList();
+            return _context.Appointments.Where(a => a.CustomerId == customer.Id).ToList();
         }
 
         public void DeleteAppointmentById(int id)

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\Service.csproj": {}
+    "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Data.csproj": {
+    "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Data.csproj",
+        "projectUniqueName": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\obj\\",
+        "projectPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\84933\\.nuget\\packages\\",
+        "outputPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\84933\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\Service.csproj": {
+    "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\Service.csproj",
+        "projectUniqueName": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\obj\\",
+        "projectPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\84933\\.nuget\\packages\\",
+        "outputPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\84933\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,8 +118,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Data.csproj"
+              "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj": {
+                "projectPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj"
               }
             }
           }
@@ -154,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -40,5 +40,6 @@
         </Grid>
         <!-- Login Button -->
         <Button Grid.Row="3" Content="Login" Margin="0,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Padding="10,5" Background="#007ACC" Foreground="White" Width="80" Click="LoginButton_Click"/>
+        <Button Grid.Row="3" Content="Sign up as customer" Margin="245,41,0,53" HorizontalAlignment="Left" Padding="10,5" Background="#FF338784" Foreground="White" Width="155" Click="Button_Click" />
     </Grid>
 </Window>

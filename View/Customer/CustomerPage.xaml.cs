@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using View.Component;
 
 namespace View.Customer
 {
@@ -19,8 +21,8 @@ namespace View.Customer
     /// </summary>
     public partial class CustomerPage : Window
     {
-        private static Data.Entities.Customer customer;
-        public CustomerPage(Data.Entities.Customer _customer)
+        private static User customer;
+        public CustomerPage(User _customer)
         {
             customer = _customer;
             InitializeComponent();
@@ -35,21 +37,26 @@ namespace View.Customer
 
         private void booking_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
             Booking bookingPage = new Booking(customer);
             bookingPage.Show();
+            this.Close();
+
         }
 
         private void history_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
             AppointmentHistory appointmentHistory = new AppointmentHistory(customer);
             appointmentHistory.Show();
+            this.Close();
+
         }
 
         private void logout_Click(object sender, RoutedEventArgs e)
         {
+            Login login = new Login();
+            login.Show();
             this.Close();
+
         }
 
     }

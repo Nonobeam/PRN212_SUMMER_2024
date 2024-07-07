@@ -20,9 +20,9 @@
                Margin="10"
                HorizontalAlignment="Center"
                Foreground="#007ACC"/>
-        <ListView Grid.Column="0"
+        <ListView x:Name="clinicList" Grid.Column="0"
               Margin="149,10,-1,10"
-              ItemsSource="{Binding Clinics}"
+             
               Background="#F0F0F0"
               BorderBrush="#CCCCCC"
               BorderThickness="1" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
@@ -47,7 +47,7 @@
         <!-- Danh sách dịch vụ -->
         <ListView Grid.Row="1"
               Margin="0,10,0,10"
-              ItemsSource="{Binding Services}"
+          x:Name="serviceList" 
               Background="#E0F0FF"
               BorderBrush="#CCCCCC"
               BorderThickness="1" HorizontalAlignment="Left" Width="137">

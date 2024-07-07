@@ -36,10 +36,10 @@ namespace View.Component
                         ManageAccount adminWindow = new ManageAccount();
                         adminWindow.Show();
                         break;
-/*                    case "Customer":
-                        CustomerPage customerWindow = new CustomerPage();
+                   case "Customer":
+                        CustomerPage customerWindow = new CustomerPage(user);
                         customerWindow.Show();
-                        break;*/
+                        break;
 /*                    case "Dentist":
                         DentistWindow dentistWindow = new DentistWindow();
                         dentistWindow.Show();
@@ -59,6 +59,13 @@ namespace View.Component
             {
                 MessageBox.Show("Invalid username or password", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerRegister customerRegister = new CustomerRegister();
+            customerRegister.Show();
+            this.Close();
         }
     }
 }

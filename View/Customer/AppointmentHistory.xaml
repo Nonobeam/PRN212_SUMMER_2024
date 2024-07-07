@@ -38,7 +38,7 @@
         </Grid>
 
         <!-- Appointment History List -->
-        <ListView x:Name="lvi"  Grid.Row="2" Margin="0,10,0,10" ItemsSource="{Binding AppointmentHistory}">
+        <ListView x:Name="lvi"  Grid.Row="2" Margin="0,10,0,10" >
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="90" Header="Date" DisplayMemberBinding="{Binding Date}"/>
@@ -64,7 +64,7 @@
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="back_Click"/>
 
     </Grid>
 </Window>

@@ -22,17 +22,21 @@ namespace View.Customer
     /// </summary>
     public partial class AppointmentHistory : Window
     {
-        private static Data.Entities.Customer customer;
+        private static User customer;
         private BookingService bookingService;
 
-        public AppointmentHistory(Data.Entities.Customer _customer)
+        public AppointmentHistory()
+        {
+        }
+
+        public AppointmentHistory(User _customer)
         {
             customer = _customer;
             InitializeComponent();
             lvi.ItemsSource = GetAppointmentHistory(customer);
         }
 
-        private IEnumerable<Appointment> GetAppointmentHistory(Data.Entities.Customer customer)
+        private IEnumerable<Appointment> GetAppointmentHistory(User customer)
         {
             bookingService = BookingService.GetInstance();
             return bookingService.GetAppointmentHistory(customer);
@@ -66,6 +70,13 @@ namespace View.Customer
                 }
             } 
             lvi.ItemsSource = GetAppointmentHistory(customer);
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            CustomerPage customerPage = new CustomerPage(customer);
+            customerPage.Show();
         }
     }
 }

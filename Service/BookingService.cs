@@ -66,12 +66,12 @@ namespace Service
              appointmentRepository.MakeAppointment(appointment);
         }
 
-        public IEnumerable<Appointment> GetAppointmentHistory(Customer customer)
+        public IEnumerable<Appointment> GetAppointmentHistory(User customer)
         {
             return appointmentRepository.GetAppointmentByCustomer(customer);
         }
 
-        public IEnumerable<Appointment> GetAppointmentHistorySearch(Customer customer, String search, DateTime? searchDate)
+        public IEnumerable<Appointment> GetAppointmentHistorySearch(User customer, String search, DateTime? searchDate)
         {
             IEnumerable<Appointment> list = appointmentRepository.GetAppointmentByCustomer(customer);
             return list.Where(a => a.Customer.User.Name.Equals(search) || a.Service.Name.Equals(search) || a.Date.Equals(searchDate)).ToList();

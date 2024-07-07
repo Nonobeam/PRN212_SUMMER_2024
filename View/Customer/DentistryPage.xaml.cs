@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Data.Entities;
+using Service;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +22,32 @@ namespace View.Customer
     /// </summary>
     public partial class DentistryPage : Window
     {
-        private static Data.Entities.Customer customer;
+        private static User customer;
+        private ClinicService clinicService;
+        private BookingService userService;
 
-        public DentistryPage(Data.Entities.Customer _customer)
+        public DentistryPage()
+        {
+        }
+
+        public DentistryPage(User _customer)
         {
             customer = _customer;
             InitializeComponent();
+            clinicList.ItemsSource = GetAllClinic();
+            serviceList.ItemsSource = GetAllService();
+        }
+
+        private IEnumerable<Data.Entities.Service> GetAllService()
+        {
+            userService = BookingService.GetInstance();
+            return userService.GetServiceForBooking();
+        }
+
+        private IEnumerable<Clinic> GetAllClinic()
+        {
+            clinicService = ClinicService.GetInstance();
+            return clinicService.GetAllClinics();
         }
     }
 }
