@@ -22,6 +22,11 @@ namespace View.Customer
     public partial class CustomerPage : Window
     {
         private static User customer;
+
+        public CustomerPage()
+        {
+        }
+
         public CustomerPage(User _customer)
         {
             customer = _customer;
