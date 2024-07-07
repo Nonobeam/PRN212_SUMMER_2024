@@ -1,7 +1,25 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\",
   "Documents": [],
+=======
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\view\\dentistpage\\dentistappointmenthistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027721C-E51A-4E0B-A5B3-FF87BA6869B5}|View\\View.csproj|solutionrelative:view\\dentistpage\\dentistappointmenthistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6029836E-F420-494E-82CB-D4DABB78DDB2}|Service\\Service.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\service\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6029836E-F420-494E-82CB-D4DABB78DDB2}|Service\\Service.csproj|solutionrelative:service\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|c:\\users\\asus\\documents\\prn212\\final\\prn212_summer_2024\\data\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1571CB7-2A9D-4520-896B-10C024B59166}|Data\\Data.csproj|solutionrelative:data\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+>>>>>>> 44ff1d1cb49c05179a8228f1e8e66f62806566d4
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +27,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 3,
+>>>>>>> 44ff1d1cb49c05179a8228f1e8e66f62806566d4
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "Data\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Data\\Entities\\Customer.cs",
+              "RelativeToolTip": "Data\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T08:22:09.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeSlotService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\TimeSlotService.cs",
+              "RelativeDocumentMoniker": "Service\\TimeSlotService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\Service\\TimeSlotService.cs",
+              "RelativeToolTip": "Service\\TimeSlotService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T08:19:26.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DentistAppointmentHistory.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\DentistPage\\DentistAppointmentHistory.xaml.cs",
+              "RelativeDocumentMoniker": "View\\DentistPage\\DentistAppointmentHistory.xaml.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\PRN212\\FINAL\\PRN212_SUMMER_2024\\View\\DentistPage\\DentistAppointmentHistory.xaml.cs",
+              "RelativeToolTip": "View\\DentistPage\\DentistAppointmentHistory.xaml.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAIAwwEYAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T07:15:41.716Z",
+              "EditorCaption": ""
+>>>>>>> 44ff1d1cb49c05179a8228f1e8e66f62806566d4
             }
           ]
         }

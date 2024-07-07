@@ -13,7 +13,7 @@
     <Compile Update="Admin\ManageAccount.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\ManageClinic.xaml.cs">
+    <Compile Update="Component\ClinicInformation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Component\Login.xaml.cs">
@@ -34,6 +34,12 @@
     <Compile Update="Customer\DentistryPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DentistPage\DentistAppointmentHistory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DentistPage\AppointmentWeek.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Admin\Dashboard.xaml">
@@ -43,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\ManageClinic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Component\ClinicInformation.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Component\Login.xaml">
@@ -61,6 +70,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Customer\DentistryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DentistPage\DentistAppointmentHistory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DentistPage\AppointmentWeek.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

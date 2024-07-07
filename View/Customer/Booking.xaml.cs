@@ -1,19 +1,9 @@
 ﻿using Data.Entities;
 using Service;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
+using Dentist = Data.Entities.Dentist;
 
 namespace View.Customer
 {
@@ -74,7 +64,7 @@ namespace View.Customer
         }
 
 
-    private IEnumerable<Dentist> GetDentistList(TimeSlot? timeSlotSelection, Clinic? clinicSelect, DateTime? selectedDate)
+    private IEnumerable<Data.Entities.Dentist> GetDentistList(TimeSlot? timeSlotSelection, Clinic? clinicSelect, DateTime? selectedDate)
         {
             bookingService = BookingService.GetInstance();
             return bookingService.GetDentistListForBooking(timeSlotSelection, clinicSelect, selectedDate);
@@ -102,7 +92,7 @@ namespace View.Customer
                 var clinicSeletion = clinic.SelectedItem as Clinic;
                 var timeSlotSelection = timeslot.SelectedItem as TimeSlot;
                 var serviceSelection = servicelist.SelectedItem as Data.Entities.Service;
-                var dentistSelection = dentistlist.SelectedItem as Dentist;
+                var dentistSelection = dentistlist.SelectedItem as Data.Entities.Dentist;
                 Appointment appointment = new Appointment();
                 appointment.ServiceId = serviceSelection.Id;
                 appointment.DentistId = dentistSelection.UserId;

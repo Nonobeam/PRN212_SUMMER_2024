@@ -10,15 +10,17 @@ namespace Data.Repository
     public class TimeslotRepository : ITimeslotService
     {
         private PrnProjectContext prnProjectContext;
+        private static TimeslotRepository instance;
 
         public TimeslotRepository(PrnProjectContext context)
         {
             prnProjectContext = context;
         }
+
         public TimeslotRepository()
         {
         }
-        private static TimeslotRepository instance;
+        
         public static TimeslotRepository GetInstance()
         {
             if (instance == null)
@@ -34,6 +36,10 @@ namespace Data.Repository
             return prnProjectContext.TimeSlots.ToList();
         }
 
-
+        public TimeOnly GetTime(int id)
+        {
+            prnProjectContext = new();
+            return (TimeOnly)prnProjectContext.TimeSlots.FirstOrDefault(t => t.Id == id).Time;
+        }
     }
 }

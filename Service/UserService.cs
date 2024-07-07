@@ -56,5 +56,10 @@ namespace Service
         {
             userRepository.AddUser(user);
         }
+
+        public User GetUserById(int id)
+        {
+            return userRepository.GetUserById(id);
+        }
     }
 }

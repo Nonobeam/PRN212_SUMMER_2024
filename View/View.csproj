@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Owner\**" />
+    <EmbeddedResource Remove="Owner\**" />
+    <None Remove="Owner\**" />
+    <Page Remove="Owner\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Customer\tech-800-Dec2018-920x613.jpg" />
   </ItemGroup>
 
