@@ -4,6 +4,7 @@ using System.IO;
 using System.Windows;
 using View.Admin;
 using View.Customer;
+using View.DentistPage;
 
 namespace View.Component
 {
@@ -28,7 +29,8 @@ namespace View.Component
 
             if (user != null)
             {
-                MessageBox.Show("Login Successful", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                String welcome = "Login Successful.\nWelcome back " + user.Name;
+                MessageBox.Show(welcome, "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 switch (user.UserType)
                 {
@@ -40,11 +42,11 @@ namespace View.Component
                         CustomerPage customerWindow = new CustomerPage();
                         customerWindow.Show();
                         break;*/
-/*                    case "Dentist":
-                        DentistWindow dentistWindow = new DentistWindow();
+                    case "Dentist":
+                        AppointmentWeek dentistWindow = new AppointmentWeek(user);
                         dentistWindow.Show();
                         break;
-                    case "Manager":
+/*                    case "Manager":
                         ManagerWindow managerWindow = new ManagerWindow();
                         managerWindow.Show();
                         break;*/

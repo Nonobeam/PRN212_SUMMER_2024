@@ -44,7 +44,7 @@
         </Grid>
 
         <!-- Clinic List -->
-        <ListView x:Name="ClinicTable" Grid.Row="2" SelectionChanged="ClinicTable_SelectionChanged" ItemsSource="{Binding Clinic}" Height="631" VerticalAlignment="Top" Margin="0,10,0,0">
+        <ListView x:Name="ClinicTable" Grid.Row="2" ItemsSource="{Binding Clinic}" Height="631" VerticalAlignment="Top" Margin="0,10,0,0">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="80" Header="ID" DisplayMemberBinding="{Binding Id}"/>

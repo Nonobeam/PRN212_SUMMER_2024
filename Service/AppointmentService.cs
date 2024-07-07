@@ -27,5 +27,10 @@ namespace Service
         {
             return appointmentRepository.GetAllAppointments();
         }
+
+        public IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId)
+        {
+            return appointmentRepository.GetAppointmentsByDentist(dentistId);
+        }
     }
 }

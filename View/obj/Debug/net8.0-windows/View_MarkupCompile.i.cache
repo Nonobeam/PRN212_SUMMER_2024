@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\View\App.xaml
-101903813918
+12-849064152
 
-16-907178356
+181237753724
 2501809198122
-Admin\Dashboard.xaml;Admin\ManageAccount.xaml;Admin\ManageClinic.xaml;Component\ClinicInformation.xaml;Component\Login.xaml;Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;
+Admin\Dashboard.xaml;Admin\ManageAccount.xaml;Admin\ManageClinic.xaml;Component\ClinicInformation.xaml;Component\Login.xaml;Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;DentistPage\AppointmentWeek.xaml;DentistPage\DentistAppointmentHistory.xaml;
 
-True
+False
 

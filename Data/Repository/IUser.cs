@@ -10,5 +10,6 @@ namespace Data.Repository
     internal interface IUser
     {
         IEnumerable<Dentist> GetDentistsByClinic(string clinicId);
+        User GetUserById(int id);
     }
 }

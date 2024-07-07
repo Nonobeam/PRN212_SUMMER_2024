@@ -78,15 +78,15 @@ namespace View.Admin
 
         private void ViewButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ClinicTable.SelectedItem is Clinic selectedClinic)
+            /*if (ClinicTable.SelectedItem is Clinic selectedClinic)
             {
                 ClinicInformation clinicInformation = new(Clinic);
                 clinicInformation.Show();
             }
             else
             {
-                MessageBox.Show("Please se")
-            }
+                MessageBox.Show("Please se");
+            }*/
         }
     }
 }

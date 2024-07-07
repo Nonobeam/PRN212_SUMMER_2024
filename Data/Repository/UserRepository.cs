@@ -96,5 +96,19 @@ namespace Data.Repository
                 context.SaveChanges();
             }
         }
+
+        public User GetUserById(int id)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                return context.Users.FirstOrDefault(u => u.Id.Equals(id));
+            }
+        }
+
+        public IEnumerable<User> GetAllUsersByType(string type)
+        {
+            var context = new PrnProjectContext();
+            return context.Users.Where(u => u.UserType == type);
+        }
     }
 }

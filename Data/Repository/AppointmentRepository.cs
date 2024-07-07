@@ -67,5 +67,11 @@ namespace Data.Repository
             }
             _context.SaveChanges();
         }
+
+        public IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId)
+        {
+            _context = new();
+            return _context.Appointments.Where(a => a.DentistId == dentistId);
+        }
     }
 }
