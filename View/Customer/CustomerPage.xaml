@@ -8,7 +8,7 @@
         Title="CustomerPage" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Customer/tech-800-Dec2018-920x613.jpg" Stretch="UniformToFill" TileMode="None"/>
+            <ImageBrush ImageSource="G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\View\Customer\tech-800-Dec2018-920x613.jpg" Stretch="UniformToFill" TileMode="None"/>
         </Grid.Background>
         <Button x:Name="logout"
             Content="Logout"
@@ -20,7 +20,7 @@
             Background="#FF4D4D"
             Foreground="White"
             FontWeight="Bold"
-            BorderThickness="0"/>
+            BorderThickness="0" Click="Logout_Click"/>
 
         <Button x:Name="booking"
             Content="Booking Appointment"
@@ -32,7 +32,7 @@
             Background="RosyBrown"
             Foreground="White"
             FontWeight="Bold"
-            BorderThickness="0" Click="booking_Click"/>
+            BorderThickness="0" Click="Booking_Click"/>
 
         <Button x:Name="clinic"
             Content="Dentistry Details"
@@ -44,7 +44,7 @@
             Background="#00C851"
             Foreground="White"
             FontWeight="Bold"
-            BorderThickness="0" Click="clinic_Click"/>
+            BorderThickness="0" Click="Clinic_Click" />
 
         <Button x:Name="history"
             Content="Appointment History"
@@ -56,7 +56,7 @@
             Background="Plum"
             Foreground="White"
             FontWeight="Bold"
-            BorderThickness="0" Click="history_Click"/>
+            BorderThickness="0" Click="History_Click" />
     </Grid>
 
 

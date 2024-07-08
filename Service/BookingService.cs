@@ -49,7 +49,7 @@ namespace Service
 
         public IEnumerable<Dentist> GetDentistListForBooking(TimeSlot? timeSlotSelection, Clinic? clinicSelect, DateTime? selectedDate)
         {
-            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDateAndTimeSlot(selectedDate, clinicSelect,timeSlotSelection);
+            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDateAndTimeSlot(selectedDate, clinicSelect, timeSlotSelection);
             IEnumerable<Dentist> dentists = userRepository.GetDentistsByClinic(clinicSelect.Id);
             var bookedDentist = getBooked.Select(book => book.Dentist);
             var availableDentist = dentists.Except(bookedDentist);
@@ -63,7 +63,7 @@ namespace Service
 
         public void MakeAppointment(Appointment appointment)
         {
-             appointmentRepository.MakeAppointment(appointment);
+            appointmentRepository.MakeAppointment(appointment);
         }
 
         public IEnumerable<Appointment> GetAppointmentHistory(User customer)
@@ -74,7 +74,7 @@ namespace Service
         public IEnumerable<Appointment> GetAppointmentHistorySearch(User customer, String search, DateTime? searchDate)
         {
             IEnumerable<Appointment> list = appointmentRepository.GetAppointmentByCustomer(customer);
-            return list.Where(a => a.Customer.User.Name.Equals(search) || a.Service.Name.Equals(search) || a.Date.Equals(searchDate)).ToList();
+            return list.Where(a => a.Dentist.User.Name.ToLower().Contains(search) || a.Service.Name.ToLower().Contains(search) || a.Date == (searchDate)).ToList();
         }
 
         public void DeleteAppointment(int id)

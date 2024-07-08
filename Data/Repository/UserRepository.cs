@@ -43,7 +43,7 @@ namespace Data.Repository
         public IEnumerable<Dentist> GetDentistsByClinic(int? clinicId)
         {
             _context = new();
-            return _context.Dentists.Where(d => d.ClinicId == clinicId);
+            return _context.Dentists.Include(a=>a.User).Where(d => d.ClinicId == clinicId);
         }
 
         public IEnumerable<Dentist> GetDentistsByClinic(string clinicId)

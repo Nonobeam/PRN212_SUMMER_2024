@@ -21,12 +21,12 @@ GO
 CREATE TABLE [dbo].[Appointment](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Date] [date] NULL,
-	[Time_slotId] [int] UNIQUE NULL,
-	[CustomerId] [int] NULL,
-	[DentistId] [int] NULL,
-	[ServiceId] [int] NULL,
-	[clinicid] [int] NULL,
-	[available] [int] NOT NULL,
+	[Time_slotId] [int] Not NULL,
+	[CustomerId] [int] not NULL,
+	[DentistId] [int] not NULL,
+	[ServiceId] [int] not NULL,
+	[clinicid] [int] not NULL,
+	[available] [int] Default 1 NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -44,8 +44,8 @@ CREATE TABLE [dbo].[Clinic](
 	[Address] [nvarchar](255) NULL,
 	[Phone] [varchar](15) NULL,
 	[ManagerId] [int] NULL,
-	[available] [int] NOT NULL,
-PRIMARY KEY CLUSTERED 
+	[available] [int] Default 1 NOT NULL,
+	PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
@@ -131,8 +131,8 @@ CREATE TABLE [dbo].[User](
 	[Password] [nvarchar](255) NULL,
 	[UserType] [nvarchar](50) NULL,
 	[email] [varchar](225) UNIQUE NULL,
-	[available] [int] NOT NULL,
-PRIMARY KEY CLUSTERED 
+	[available] [int] Default 1 NOT NULL,
+	PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
@@ -253,12 +253,15 @@ GO
 INSERT [dbo].[User] ([Id], [Name], [Phone], [Password], [UserType], [email], [available]) VALUES (18, N'Emma alley', N'3462634654', N'88888888', N'Manager', 'example18@mail.com', 1)
 GO
 SET IDENTITY_INSERT [dbo].[User] OFF
-GO
-ALTER TABLE [dbo].[Appointment] ADD  DEFAULT ((1)) FOR [available]
-GO
-ALTER TABLE [dbo].[Clinic] ADD  DEFAULT ((1)) FOR [available]
-GO
-ALTER TABLE [dbo].[User] ADD  DEFAULT ((1)) FOR [available]
+INSERT INTO [dbo].[Appointment] ([Date], [Time_slotId], [CustomerId], [DentistId], [ServiceId], [ClinicId])
+VALUES 
+('2024-07-01', 1, 1, 4, 1, 1),
+('2024-07-01', 2, 2, 8, 2, 1),
+('2024-07-02', 3, 6, 10, 1, 1),
+('2024-07-03', 4, 1, 12, 2, 2),
+('2024-07-03', 5, 2, 13, 1, 2),
+('2024-07-04', 6, 6, 14, 2, 1),
+('2024-07-04', 7, 1, 17, 1, 2);
 GO
 ALTER TABLE [dbo].[Admin]  WITH CHECK ADD FOREIGN KEY([UserId])
 REFERENCES [dbo].[User] ([Id])

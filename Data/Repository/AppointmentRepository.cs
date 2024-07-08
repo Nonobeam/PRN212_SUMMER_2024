@@ -1,5 +1,9 @@
 ﻿using Data.Entities;
+<<<<<<< HEAD
 using System.Collections.ObjectModel;
+=======
+using Microsoft.EntityFrameworkCore;
+>>>>>>> 197b52513686be5e3511151023bf63e90d363464
 using System.Linq;
 
 namespace Data.Repository
@@ -33,16 +37,17 @@ namespace Data.Repository
             return _context.Appointments;
         }
 
+
         public IEnumerable<Appointment> GetAppointmentByDate(DateTime? date, Clinic? clinic)
         {
             _context = new();
-            return _context.Appointments.Where(a => a.Date == date && a.Clinic == clinic).ToList();
+            return _context.Appointments.Where(a => a.Date == date && a.Clinic == clinic && a.Available == 1).ToList();
         }
 
         public IEnumerable<Appointment> GetAppointmentByDateAndTimeSlot(DateTime? selectedDate, Clinic? clinicSelect, TimeSlot? timeSlotSelection)
         {
             _context = new();
-            return _context.Appointments.Where(a => a.Date == selectedDate && a.Clinic == clinicSelect && a.TimeSlot == timeSlotSelection);
+            return _context.Appointments.Where(a => a.Date == selectedDate && a.Clinic == clinicSelect && a.TimeSlot == timeSlotSelection && a.Available == 1);
         }
 
         public void MakeAppointment(Appointment appointment)
@@ -55,8 +60,17 @@ namespace Data.Repository
         public IEnumerable<Appointment> GetAppointmentByCustomer(User customer)
         {
             _context = new();
-            return _context.Appointments.Where(a => a.CustomerId == customer.Id).ToList();
+            return _context.Appointments.
+                Include(a => a.TimeSlot)
+                            .Include(a => a.Customer)
+                            .ThenInclude(c => c.User)
+                            .Include(a => a.Dentist)
+                            .ThenInclude(d => d.User)
+                            .Include(a => a.Service)
+                            .Include(a => a.Clinic)
+                .Where(a => a.CustomerId == customer.Id).ToList();
         }
+
 
         public void DeleteAppointmentById(int id)
         {

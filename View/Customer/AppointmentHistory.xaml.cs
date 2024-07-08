@@ -50,12 +50,13 @@ namespace View.Customer
             {
                 lvi.ItemsSource = bookingService.GetAppointmentHistorySearch(customer,search.Text,searchDate.SelectedDate);
             }
+            else lvi.ItemsSource = GetAppointmentHistory(customer);
         }
 
-        private void delete(object sender, RoutedEventArgs e)
+        private void Delete(object sender, RoutedEventArgs e)
         {
             bookingService = BookingService.GetInstance();
-
+           
             MessageBoxResult result = MessageBox.Show("Are you sure you want to delete this ?", "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
@@ -72,11 +73,12 @@ namespace View.Customer
             lvi.ItemsSource = GetAppointmentHistory(customer);
         }
 
-        private void back_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
             CustomerPage customerPage = new CustomerPage(customer);
             customerPage.Show();
+            this.Close();
+
         }
     }
 }

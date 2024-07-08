@@ -49,5 +49,12 @@ namespace View.Customer
             clinicService = ClinicService.GetInstance();
             return clinicService.GetAllClinics();
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerPage customerPage = new CustomerPage(customer);
+            customerPage.Show();
+            this.Close();
+        }
     }
 }

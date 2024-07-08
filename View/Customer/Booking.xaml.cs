@@ -1,9 +1,19 @@
 ﻿using Data.Entities;
 using Service;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-
-using Dentist = Data.Entities.Dentist;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace View.Customer
 {
@@ -24,6 +34,7 @@ namespace View.Customer
             customer = _customer;
             InitializeComponent();
             clinic.ItemsSource = ClinicList();
+            clinic.DisplayMemberPath = "Name";
         }
 
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -34,6 +45,7 @@ namespace View.Customer
                 if (datePicker.SelectedDate != null && clinic.SelectedValue!=null)
                 {
                     timeslot.ItemsSource = TimeSlotOptions(datePicker.SelectedDate, (Clinic)clinic.SelectedItem);
+                    timeslot.DisplayMemberPath = "Time";
                 }
             }
         }
@@ -50,10 +62,10 @@ namespace View.Customer
 
         private void Timeslot_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var timeSlotSelection = sender as TimeSlot;
-            if(timeSlotSelection != null && clinic.SelectedValue != null && date.SelectedDate != null)
+            if(timeslot.SelectedValue != null && clinic.SelectedValue != null && date.SelectedDate != null)
             {
                 servicelist.ItemsSource = GetServiceForBooking();
+                servicelist.DisplayMemberPath = "Name";
             }
         }
 
@@ -64,20 +76,20 @@ namespace View.Customer
         }
 
 
-    private IEnumerable<Data.Entities.Dentist> GetDentistList(TimeSlot? timeSlotSelection, Clinic? clinicSelect, DateTime? selectedDate)
+    private IEnumerable<Dentist> GetDentistList(TimeSlot? timeSlotSelection, Clinic? clinicSelect, DateTime? selectedDate)
         {
             bookingService = BookingService.GetInstance();
             return bookingService.GetDentistListForBooking(timeSlotSelection, clinicSelect, selectedDate);
         }
 
-        private void servicelist_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Servicelist_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var services = sender as Data.Entities.Service;
-            if (timeslot.SelectedValue != null && clinic.SelectedValue != null && date.SelectedDate != null && services !=null)
+            if (timeslot.SelectedValue != null && clinic.SelectedValue != null && date.SelectedDate != null && servicelist.SelectedValue !=null)
             {
                 var clinicSeletion = clinic.SelectedItem as Clinic;
                 var timeSlotSelection = timeslot.SelectedItem as TimeSlot;
                 dentistlist.ItemsSource = GetDentistList(timeSlotSelection, clinicSeletion, date.SelectedDate);
+                dentistlist.DisplayMemberPath = "User.Name";
             }
             
         }
@@ -92,16 +104,20 @@ namespace View.Customer
                 var clinicSeletion = clinic.SelectedItem as Clinic;
                 var timeSlotSelection = timeslot.SelectedItem as TimeSlot;
                 var serviceSelection = servicelist.SelectedItem as Data.Entities.Service;
-                var dentistSelection = dentistlist.SelectedItem as Data.Entities.Dentist;
+                var dentistSelection = dentistlist.SelectedItem as Dentist;
+                
                 Appointment appointment = new Appointment();
                 appointment.ServiceId = serviceSelection.Id;
                 appointment.DentistId = dentistSelection.UserId;
                 appointment.ClinicId = clinicSeletion.Id;
                 appointment.CustomerId = customer.Id;
                 appointment.TimeSlotId = timeSlotSelection.Id;
+                appointment.Date =  date.SelectedDate;
                 bookingService.MakeAppointment(appointment);
-                this.Close();
+               
                 MessageBox.Show("Booking successfully");
+                
+
             } else
             {
                 MessageBox.Show("You should input all field");
@@ -109,11 +125,12 @@ namespace View.Customer
 
         }
 
-        private void back_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
             CustomerPage customerPage = new CustomerPage(customer);
             customerPage.Show();
+            this.Close();
+
         }
     }
 }

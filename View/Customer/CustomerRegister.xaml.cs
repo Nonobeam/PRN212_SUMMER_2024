@@ -35,7 +35,7 @@ namespace View.Customer
             {
                 if (confirmPassword != password)
                 {
-                    if (!IsExistByMail(mail))
+                    if (!IsExistByMailOrPhone(mail,phone))
                     {
                         User customer = new User();
                         customer.Name = username.Text;
@@ -59,10 +59,17 @@ namespace View.Customer
             }
         }
 
-        private bool IsExistByMail(TextBox mail)
+        private bool IsExistByMailOrPhone(TextBox mail, TextBox phone)
         {
             userService = UserService.GetInstance();
-            return userService.EmailExists(mail.Text);
+            if (userService.EmailExists(mail.Text) || userService.PhoneExists(phone.Text))
+            {
+                return true;
+            }
+            else
+            {
+                 return false;
+            }
         }
     }
 }

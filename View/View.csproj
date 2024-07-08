@@ -9,14 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Dentist\**" />
     <Compile Remove="Owner\**" />
+    <EmbeddedResource Remove="Dentist\**" />
     <EmbeddedResource Remove="Owner\**" />
+    <None Remove="Dentist\**" />
     <None Remove="Owner\**" />
+    <Page Remove="Dentist\**" />
     <Page Remove="Owner\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Customer\tech-800-Dec2018-920x613.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,12 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Customer\tech-800-Dec2018-920x613.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Dentist\" />
-    <Folder Include="Owner\" />
+    <Folder Include="Manager\" />
   </ItemGroup>
 
 </Project>
