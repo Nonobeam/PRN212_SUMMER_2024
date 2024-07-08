@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,9 +34,10 @@ namespace Data.Repository
         public IEnumerable<Clinic> GetAllClinics()
         {
             _context = new();
-            return _context.Clinics.ToList();
+            return _context.Clinics
+                       .Include(c => c.Manager)
+                       .ThenInclude(m => m.User).Where(c => c.Available == 1).ToList();
         }
-
         public void AddClinic(Clinic clinic)
         {
             _context = new();

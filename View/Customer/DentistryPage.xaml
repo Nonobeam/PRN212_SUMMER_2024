@@ -36,10 +36,10 @@
             </ListView.RenderTransform>
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="130" Header="Clinic Name" DisplayMemberBinding="{Binding ClinicName}"/>
+                    <GridViewColumn Width="130" Header="Clinic Name" DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Width="300" Header="Adress" DisplayMemberBinding="{Binding Address}"/>
                     <GridViewColumn Width="100" Header="Phone" DisplayMemberBinding="{Binding Phone}"/>
-                    <GridViewColumn Width="120" Header="Manager" DisplayMemberBinding="{Binding ManagerName}"/>
+                    <GridViewColumn Width="120" Header="Manager" DisplayMemberBinding="{Binding Manager.User.Name}"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -53,11 +53,11 @@
               BorderThickness="1" HorizontalAlignment="Left" Width="137">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="130" Header="Service" DisplayMemberBinding="{Binding ServiceName}"/>
+                    <GridViewColumn Width="130" Header="Service" DisplayMemberBinding="{Binding Name}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
 
     </Grid>
 </Window>

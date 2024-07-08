@@ -33,14 +33,15 @@ namespace View.Customer
             InitializeComponent();
         }
 
-        private void clinic_Click(object sender, RoutedEventArgs e)
+        private void Clinic_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
             DentistryPage dentistryPage = new DentistryPage(customer);
             dentistryPage.Show();
+            this.Close();
+
         }
 
-        private void booking_Click(object sender, RoutedEventArgs e)
+        private void Booking_Click(object sender, RoutedEventArgs e)
         {
             Booking bookingPage = new Booking(customer);
             bookingPage.Show();
@@ -48,7 +49,7 @@ namespace View.Customer
 
         }
 
-        private void history_Click(object sender, RoutedEventArgs e)
+        private void History_Click(object sender, RoutedEventArgs e)
         {
             AppointmentHistory appointmentHistory = new AppointmentHistory(customer);
             appointmentHistory.Show();
@@ -56,13 +57,13 @@ namespace View.Customer
 
         }
 
-        private void logout_Click(object sender, RoutedEventArgs e)
+        private void Logout_Click(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
             login.Show();
             this.Close();
-
         }
 
+        
     }
 }

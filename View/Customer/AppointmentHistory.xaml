@@ -42,16 +42,17 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="90" Header="Date" DisplayMemberBinding="{Binding Date}"/>
-                    <GridViewColumn Width="40"  Header="Time" DisplayMemberBinding="{Binding TimeSlot.Time}"/>
-                    <GridViewColumn Width="170" Header="Customer" DisplayMemberBinding="{Binding Customer.Name}"/>
-                    <GridViewColumn Width="170" Header="Dentist" DisplayMemberBinding="{Binding Dentist.Name}"/>
-                    <GridViewColumn Width="130" Header="Service" DisplayMemberBinding="{Binding Service.Name}"/>
-                    <GridViewColumn Width="130" Header="Clinic" DisplayMemberBinding="{Binding Clinic.Name}"/>
-                    <GridViewColumn Width="60">
+                    <GridViewColumn Width="100"  Header="Time" DisplayMemberBinding="{Binding TimeSlot.Time}"/>
+                    <GridViewColumn Width="170" Header="Dentist" DisplayMemberBinding="{Binding Dentist.User.Name}"/>
+                    <GridViewColumn Width="120" Header="Service" DisplayMemberBinding="{Binding Service.Name}"/>
+                    <GridViewColumn Width="140" Header="Clinic" DisplayMemberBinding="{Binding Clinic.Name}"/>
+                    <GridViewColumn Width="100" Header="Status" DisplayMemberBinding="{Binding Available}"/>
+
+                    <GridViewColumn Width="70">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <Button x:Name="delete" Content="Delete" Margin="5" CommandParameter="{Binding}" Click="delete"   />
+                                    <Button x:Name="delete" Content="Delete" Margin="5" CommandParameter="{Binding}" Click="Delete"   />
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
@@ -64,7 +65,7 @@
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="back_Click"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
 
     </Grid>
 </Window>

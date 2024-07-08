@@ -14,3 +14,19 @@ C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\Service\obj\Debug\net8.0
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\refint\Service.dll
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.pdb
 C:\Users\Asus\Documents\PRN212\FINAL\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\ref\Service.dll
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\bin\Debug\net8.0\Service.deps.json
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\bin\Debug\net8.0\Service.dll
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\bin\Debug\net8.0\Service.pdb
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\bin\Debug\net8.0\Data.dll
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\bin\Debug\net8.0\Data.pdb
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.sourcelink.json
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.dll
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\refint\Service.dll
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\Service.pdb
+G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\Service\obj\Debug\net8.0\ref\Service.dll
