@@ -41,15 +41,9 @@ namespace View.Component
                    case "Customer":
                         CustomerPage customerWindow = new CustomerPage(user);
                         customerWindow.Show();
-<<<<<<< HEAD
                         break;
-/*                    case "Dentist":
-                        DentistWindow dentistWindow = new DentistWindow();
-=======
-                        break;*/
                     case "Dentist":
                         AppointmentWeek dentistWindow = new AppointmentWeek(user);
->>>>>>> 44ff1d1cb49c05179a8228f1e8e66f62806566d4
                         dentistWindow.Show();
                         break;
 /*                    case "Manager":
