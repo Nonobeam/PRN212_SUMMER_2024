@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace Data.Repository
@@ -72,6 +73,12 @@ namespace Data.Repository
         {
             _context = new();
             return _context.Appointments.Where(a => a.DentistId == dentistId);
+        }
+
+        public IEnumerable<Appointment> GetAppointmentsByClinicId(int clinicId)
+        {
+            _context = new();
+            return _context.Appointments.Where(a => a.ClinicId == clinicId);
         }
     }
 }

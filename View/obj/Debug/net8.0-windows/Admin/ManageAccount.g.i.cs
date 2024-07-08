@@ -165,7 +165,7 @@ namespace View.Admin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/View;V1.0.0.0;component/admin/manageaccount.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/View;component/admin/manageaccount.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Admin\ManageAccount.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -56,5 +56,11 @@ namespace Data.Repository
             }
             return 0;
         }
+
+        public Clinic GetClinicById(int clinicId)
+        {
+            _context = new();
+            return _context.Clinics.FirstOrDefault(u => u.Id == clinicId);
+        }
     }
 }

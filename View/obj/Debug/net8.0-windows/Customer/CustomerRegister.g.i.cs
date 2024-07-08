@@ -109,7 +109,7 @@ namespace View.Customer {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/View;V1.0.0.0;component/customer/customerregister.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/View;component/customer/customerregister.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Customer\CustomerRegister.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
