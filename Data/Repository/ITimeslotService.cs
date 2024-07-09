@@ -10,5 +10,6 @@ namespace Data.Repository
     public interface ITimeslotService
     {
         IEnumerable<TimeSlot> GetSlots();
+        TimeOnly GetTime(int id);
     }
 }

@@ -10,5 +10,8 @@ namespace Data.Repository
     internal interface IClinic
     {
         IEnumerable<Clinic> GetAllClinics();
+        int ChangeClinicAvailable(int id, int available);
+        void AddClinic(Clinic clinic);
+
     }
 }

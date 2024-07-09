@@ -12,5 +12,8 @@ namespace Data.Repository
         IEnumerable<Appointment> GetAppointmentByDate(DateTime? date, Clinic? clinic);
         IEnumerable<Appointment> GetAppointmentByDateAndTimeSlot(DateTime? selectedDate, Clinic? clinicSelect, TimeSlot? timeSlotSelection);
         void MakeAppointment(Appointment appointment);
+        void DeleteAppointmentById(int id);
+        IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId);
+        IEnumerable<Appointment> GetAllAppointments();
     }
 }

@@ -10,5 +10,6 @@ namespace Data.Repository
     public interface IDentistRepository
     {
         IEnumerable<Dentist> GetAllDentists();
+        IEnumerable<Dentist> GetAllDentistsByClinic(int clinicId);
     }
 }

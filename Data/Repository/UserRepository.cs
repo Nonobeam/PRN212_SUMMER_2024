@@ -45,12 +45,7 @@ namespace Data.Repository
             _context = new();
             return _context.Dentists.Include(a=>a.User).Where(d => d.ClinicId == clinicId);
         }
-
-        public IEnumerable<Dentist> GetDentistsByClinic(string clinicId)
-        {
-            throw new NotImplementedException();
-        }
-
+     
         public IEnumerable<User> GetAllUsers()
         {
             _context = new();

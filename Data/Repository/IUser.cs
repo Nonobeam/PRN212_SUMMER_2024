@@ -9,7 +9,15 @@ namespace Data.Repository
 {
     internal interface IUser
     {
-        IEnumerable<Dentist> GetDentistsByClinic(string clinicId);
+        IEnumerable<Dentist> GetDentistsByClinic(int? clinicId);
         User GetUserById(int id);
+        IEnumerable<User> GetAllUsersByType(string type);
+        void AddUser(User user);
+        bool PhoneExists(string phone);
+        bool EmailExists(string email);
+        int ChangeUserAvailable(int id, int available);
+        IEnumerable<User> GetAllUsers();
+        public User GetUserByEmail(String email);
+
     }
 }
