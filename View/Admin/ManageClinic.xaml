@@ -51,12 +51,12 @@
                     <GridViewColumn Width="250" Header="Name" DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Width="250" Header="Address" DisplayMemberBinding="{Binding Address}"/>
                     <GridViewColumn Width="200" Header="Phone" DisplayMemberBinding="{Binding Phone}"/>
-                    <GridViewColumn Width="100" Header="Manager ID" DisplayMemberBinding="{Binding ManagerId}"/>
-                    <GridViewColumn Width="140" Header="Available" DisplayMemberBinding="{Binding Available}"/>
-                    <GridViewColumn Width="160" Header="View">
+                    <GridViewColumn Width="110" Header="Manager ID" DisplayMemberBinding="{Binding ManagerId}"/>
+                    <GridViewColumn Width="160" Header="Available" DisplayMemberBinding="{Binding Available}"/>
+                    <GridViewColumn Width="140" Header="View">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Name="ViewButton" Grid.Row="1" Grid.Column="6" Content="Delete" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="ViewButton_Click"/>
+                                <Button Name="ViewButton" Grid.Row="1" Grid.Column="6" Content="View" Margin="10,0,10,0" Padding="10,5" Background="#007ACC" Foreground="White" Click="ViewButton_Click"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>

@@ -4,9 +4,49 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View.Component"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="ClinicInformation" Height="450" Width="800">
+        Title="ClinicInformation" Height="800" Width="1200">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#007ACC" Padding="10" Height="52" VerticalAlignment="Top">
+            <DockPanel LastChildFill="True">
+                <Button x:Name="Back" Content="Back" Width="84" Height="32" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click" DockPanel.Dock="Left" Margin="5,0"/>
+                <Button x:Name="Clinic" Content="Clinic" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Clinic_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                <Button x:Name="ClinicDashboard" Content="Dashboard" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Dashboard_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                <Button x:Name="Account" Content="Account" Width="84" Height="32" FontFamily="Tahoma" FontSize="10" Foreground="#FFEEE3E3" Click="Account_Click" DockPanel.Dock="Right" Margin="5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                <TextBlock Text="Clinic Detail Information" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top"/>
+            </DockPanel>
+        </Border>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Appointments Table" FontSize="16" FontWeight="Bold" Margin="10"/>
+            <ListView x:Name="AppointmentsTable" ItemsSource="{Binding Appointments}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="130" Header="Date" DisplayMemberBinding="{Binding Date}"/>
+                        <GridViewColumn Width="200"  Header="TimeSlot" DisplayMemberBinding="{Binding TimeSlot}"/>
+                        <GridViewColumn Width="200" Header="Customer" DisplayMemberBinding="{Binding Customer}"/>
+                        <GridViewColumn Width="200" Header="Dentist" DisplayMemberBinding="{Binding Dentist}"/>
+                        <GridViewColumn Width="150" Header="Service" DisplayMemberBinding="{Binding Service}"/>
+                        <GridViewColumn Width="250" Header="Clinic" DisplayMemberBinding="{Binding Clinic}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <TextBlock Text="DentistsTable" FontSize="16" FontWeight="Bold" Margin="10"/>
+            <ListView x:Name="DentistsTable" ItemsSource="{Binding Dentists}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="600" Header="Name" DisplayMemberBinding="{Binding Name}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
     </Grid>
 </Window>

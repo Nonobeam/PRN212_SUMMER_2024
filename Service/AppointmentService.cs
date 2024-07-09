@@ -1,5 +1,6 @@
 ﻿using Data.Entities;
 using Data.Repository;
+using System.Collections.ObjectModel;
 
 namespace Service
 {
@@ -31,6 +32,11 @@ namespace Service
         public IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId)
         {
             return appointmentRepository.GetAppointmentsByDentist(dentistId);
+        }
+
+        public IEnumerable<Appointment> GetAppointmentsByClinicId(int clinicId)
+        {
+            return appointmentRepository.GetAppointmentsByClinicId(clinicId);
         }
     }
 }

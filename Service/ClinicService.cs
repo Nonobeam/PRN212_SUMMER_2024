@@ -45,5 +45,10 @@ namespace Service
         {
             clinicRepository.AddClinic(clinic);
         }
+
+        public Clinic GetClinicById(int clinicId)
+        {
+            return clinicRepository.GetClinicById(clinicId);
+        }
     }
 }

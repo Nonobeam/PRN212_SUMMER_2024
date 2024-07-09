@@ -105,5 +105,27 @@ namespace Data.Repository
             var context = new PrnProjectContext();
             return context.Users.Where(u => u.UserType == type);
         }
+
+        public User GetUserByEmailAndPassword(string email, string password)
+        {
+            using (var contex = new PrnProjectContext())
+            {
+                return contex.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            }
+        }
+
+        public List<User> GetDentistNameInOneClinic(int clinicId)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                var dentistUsers = context.Clinics
+                    .Where(c => c.Id == clinicId)
+                    .SelectMany(c => c.Dentists)
+                    .Select(d => d.User)
+                    .ToList();
+
+                return dentistUsers;
+            }  
+        }
     }
 }

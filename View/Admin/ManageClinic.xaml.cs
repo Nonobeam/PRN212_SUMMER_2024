@@ -78,15 +78,17 @@ namespace View.Admin
 
         private void ViewButton_Click(object sender, RoutedEventArgs e)
         {
-            /*if (ClinicTable.SelectedItem is Clinic selectedClinic)
+            if (ClinicTable.SelectedItem is Clinic selectedClinic)
             {
-                ClinicInformation clinicInformation = new(Clinic);
+                int clinicId = selectedClinic.Id;
+                ClinicInformation clinicInformation = new ClinicInformation(clinicId);
+                MessageBox.Show("Move to clinic with Id: " + clinicId);
                 clinicInformation.Show();
-            }
-            else
+                this.Close();
+            } else
             {
-                MessageBox.Show("Please se");
-            }*/
+                MessageBox.Show("Please select this row first");
+            }
         }
     }
 }

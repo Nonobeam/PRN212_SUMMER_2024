@@ -26,7 +26,7 @@ namespace Service
 
         public User Login(String email, String password)
         {
-            User user = userRepository.GetUserByEmail(email);
+            User user = userRepository.GetUserByEmailAndPassword(email, password);
             return user;
         }
 
@@ -60,6 +60,11 @@ namespace Service
         public User GetUserById(int id)
         {
             return userRepository.GetUserById(id);
+        }
+
+        public List<User> GetDentistNameInOneClinic(int clinicId)
+        {
+            return userRepository.GetDentistNameInOneClinic(clinicId);
         }
     }
 }
