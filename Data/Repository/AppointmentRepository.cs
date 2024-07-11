@@ -91,5 +91,25 @@ namespace Data.Repository
             _context = new();
             return _context.Appointments.Where(a => a.ClinicId == clinicId);
         }
+
+        public void save(Appointment appointment)
+        {
+            _context = new();
+            if(appointment.Id == null || appointment.Id == 0) {
+                _context.Appointments.Add(appointment);
+                _context.SaveChanges();
+            }
+            else
+            {
+                _context.Appointments.Update(appointment);
+                _context.SaveChanges();
+            }
+        }
+
+        public Appointment GetAppointmentById(int id)
+        {
+            _context = new();
+            return _context.Appointments.FirstOrDefault(a => a.Id == id);
+        }
     }
 }

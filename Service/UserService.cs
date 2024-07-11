@@ -57,14 +57,24 @@ namespace Service
             userRepository.AddUser(user);
         }
 
-        public User GetUserById(int id)
+        public User GetUserById(int? id)
         {
-            return userRepository.GetUserById(id);
+            return userRepository.GetUserById((int)id);
         }
 
         public List<User> GetDentistNameInOneClinic(int clinicId)
         {
             return userRepository.GetDentistNameInOneClinic(clinicId);
+        }
+
+        public User? getUserByEmail(string email)
+        {
+            return userRepository.GetUserByEmail(email);    
+        }
+
+        public void deleteUserById(int id)
+        {
+            userRepository.deleteUserById(id);
         }
     }
 }

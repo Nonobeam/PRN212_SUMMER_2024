@@ -11,5 +11,11 @@ namespace Data.Repository
     {
         IEnumerable<Dentist> GetAllDentists();
         IEnumerable<Dentist> GetAllDentistsByClinic(int clinicId);
+
+        void save(Dentist dentist);
+
+        void update(Dentist dentist);
+
+       
     }
 }

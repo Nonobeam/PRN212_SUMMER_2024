@@ -85,11 +85,23 @@ namespace Data.Repository
 
         public void AddUser(User user)
         {
-            using (var context = new PrnProjectContext())
+            if(user.Id == null || user.Id ==0)
             {
-                context.Users.Add(user);
-                context.SaveChanges();
+                using (var context = new PrnProjectContext())
+                {
+                    context.Users.Add(user);
+                    context.SaveChanges();
+                }
             }
+            else
+            {
+                using (var context = new PrnProjectContext())
+                {
+                    context.Users.Update(user);
+                    context.SaveChanges();
+                }
+            }
+            
         }
 
         public User GetUserById(int id)
@@ -126,6 +138,16 @@ namespace Data.Repository
 
                 return dentistUsers;
             }  
+        }
+
+        public void deleteUserById(int id)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                User user = context.Users.FirstOrDefault(u => u.Id == id);
+                context.Users.Remove(user);
+                context.SaveChanges();
+            }
         }
     }
 }

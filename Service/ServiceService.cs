@@ -27,5 +27,10 @@ namespace Service
         {
             return serviceRepository.GetAllService();
         }
+
+        public Data.Entities.Service getServiceById(int? id)
+        {
+            return serviceRepository.GetService((int)id);
+        }
     }
 }

@@ -43,12 +43,19 @@ namespace Service
 
         public void AddClinic(Clinic clinic)
         {
-            clinicRepository.AddClinic(clinic);
+            try
+            {
+                clinicRepository.AddClinic(clinic);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("manager Id is not exist");
+            }  
         }
 
-        public Clinic GetClinicById(int clinicId)
+        public Clinic GetClinicById(int? clinicId)
         {
-            return clinicRepository.GetClinicById(clinicId);
+            return clinicRepository.GetClinicById((int)clinicId);
         }
     }
 }

@@ -38,5 +38,15 @@ namespace Service
         {
             return appointmentRepository.GetAppointmentsByClinicId(clinicId);
         }
+
+        public void AddAppoinment(Appointment appointment)
+        {
+            appointmentRepository.save(appointment);
+        }
+
+        public Appointment GetAppointment(int id)
+        {
+            return appointmentRepository.GetAppointmentById(id);
+        }
     }
 }

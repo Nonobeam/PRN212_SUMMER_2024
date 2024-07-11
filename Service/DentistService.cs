@@ -33,5 +33,16 @@ namespace Service
         {
             return dentistRepository.GetAllDentistsByClinic(clinicId);
         }
+
+        public void AddDentist(Dentist dentist)
+        {
+            dentistRepository.save(dentist);
+        }
+
+        public void UpdateDentist(Dentist dentist)
+        {
+            dentistRepository.update(dentist);
+        }
+
     }
 }

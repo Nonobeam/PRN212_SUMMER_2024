@@ -13,7 +13,7 @@ public partial class Clinic
 
     public string? Phone { get; set; }
 
-    public int? ManagerId { get; set; }
+    public int ManagerId { get; set; }
 
     public int Available { get; set; }
     public string Status
