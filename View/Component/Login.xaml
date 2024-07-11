@@ -16,30 +16,30 @@
 
         <!-- Header -->
         <Border Grid.Row="0" Background="#007ACC" Padding="10" Margin="0,0,0,20">
-            <TextBlock Text="User Login" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="Login" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </Border>
 
         <!-- Username -->
-        <Grid x:Name="mail" Grid.Row="1" Margin="10">
+        <Grid x:Name="mail" Grid.Row="1" Margin="28,10,10,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Email:" VerticalAlignment="Center" Foreground="#007ACC" Margin="0,0,10,0"/>
-            <TextBox x:Name="email" Grid.Column="1" VerticalAlignment="Center" Margin="57,0,0,0" Width="260"/>
+            <TextBlock Text="Email" VerticalAlignment="Center" Foreground="#007ACC" Margin="0,0,10,0"/>
+            <TextBox x:Name="email" Grid.Column="1" VerticalAlignment="Center" Margin="59,0,30,0"/>
         </Grid>
 
         <!-- Password -->
-        <Grid x:Name="pwd" Grid.Row="2" Margin="10">
+        <Grid x:Name="pwd" Grid.Row="2" Margin="28,10,10,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Password:" VerticalAlignment="Center" Foreground="#007ACC" Margin="0,0,10,0"/>
-            <PasswordBox x:Name="password" Grid.Column="1" VerticalAlignment="Center" Margin="35,0,0,0" Width="260"/>
+            <TextBlock Text="Password" VerticalAlignment="Center" Foreground="#007ACC" Margin="0,0,10,0"/>
+            <PasswordBox x:Name="password" Grid.Column="1" VerticalAlignment="Center" Margin="38,0,30,0"/>
         </Grid>
         <!-- Login Button -->
-        <Button Grid.Row="3" Content="Login" Margin="0,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Padding="10,5" Background="#007ACC" Foreground="White" Width="80" Click="LoginButton_Click"/>
-        <Button Grid.Row="3" Content="Sign up as customer" Margin="245,41,0,53" HorizontalAlignment="Left" Padding="10,5" Background="#FF338784" Foreground="White" Width="155" Click="Button_Click" />
+        <Button Grid.Row="3" Content="Login" Margin="0,33,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Padding="10,5" Background="#007ACC" Foreground="White" Width="80" Click="LoginButton_Click"/>
+        <Button Grid.Row="3" Content="Sign up as customer" Margin="0,82,0,12" HorizontalAlignment="Center" Padding="10,5" Background="#FF338784" Foreground="White" Width="156" Click="Button_Click" />
     </Grid>
 </Window>
