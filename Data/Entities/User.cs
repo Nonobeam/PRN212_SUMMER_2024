@@ -22,7 +22,13 @@ public partial class User
     public string? Email { get; set; }
 
     public int Available { get; set; }
-
+    public string Status
+    {
+        get
+        {
+            return Available == 0 ? "Active" : "Inactive";
+        }
+    }
     public virtual Admin? Admin { get; set; }
 
     public virtual Customer? Customer { get; set; }

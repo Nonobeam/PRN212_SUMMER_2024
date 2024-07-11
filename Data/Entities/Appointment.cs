@@ -20,7 +20,13 @@ public partial class Appointment
     public int? ClinicId { get; set; }
 
     public int Available { get; set; }
-
+    public string Status
+    {
+        get
+        {
+            return Available == 0 ? "Active" : "Inactive";
+        }
+    }
     public virtual Clinic? Clinic { get; set; }
 
     public virtual Customer? Customer { get; set; }

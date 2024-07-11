@@ -46,7 +46,7 @@
                     <GridViewColumn Width="170" Header="Dentist" DisplayMemberBinding="{Binding Dentist.User.Name}"/>
                     <GridViewColumn Width="120" Header="Service" DisplayMemberBinding="{Binding Service.Name}"/>
                     <GridViewColumn Width="140" Header="Clinic" DisplayMemberBinding="{Binding Clinic.Name}"/>
-                    <GridViewColumn Width="100" Header="Status" DisplayMemberBinding="{Binding Available}"/>
+                    <GridViewColumn Width="100" Header="Status" DisplayMemberBinding="{Binding Status}"/>
 
                     <GridViewColumn Width="70">
                         <GridViewColumn.CellTemplate>

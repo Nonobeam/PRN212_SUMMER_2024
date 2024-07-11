@@ -16,6 +16,13 @@ public partial class Clinic
     public int? ManagerId { get; set; }
 
     public int Available { get; set; }
+    public string Status
+    {
+        get
+        {
+            return Available == 0 ? "Active" : "Inactive";
+        }
+    }
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 

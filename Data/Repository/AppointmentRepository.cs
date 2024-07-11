@@ -1,9 +1,6 @@
 ﻿using Data.Entities;
-<<<<<<< HEAD
 using System.Collections.ObjectModel;
-=======
 using Microsoft.EntityFrameworkCore;
->>>>>>> 197b52513686be5e3511151023bf63e90d363464
 using System.Linq;
 
 namespace Data.Repository
