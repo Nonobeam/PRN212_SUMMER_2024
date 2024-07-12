@@ -25,7 +25,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Column="0" Margin="0,0,20,0">
+            <StackPanel Grid.Column="0" Margin="85,0,569,0" Grid.ColumnSpan="2">
                 <TextBlock Height="37" Text="Name:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,0,0,5"/>
                 <TextBlock Height="37" Text="Email:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
                 <TextBlock Height="37" Text="Phone:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
@@ -33,7 +33,7 @@
                 <TextBlock Height="37" Text="Confirm Password:" Foreground="#2C3E50" FontWeight="Bold" Margin="0,10,0,5"/>
             </StackPanel>
 
-            <StackPanel Grid.Column="1">
+            <StackPanel Grid.Column="1" Margin="222,0,126,0">
                 <TextBox x:Name="username" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
                 <TextBox x:Name="mail" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
                 <TextBox x:Name="phone" Height="40" Padding="5" BorderBrush="#2C3E50" BorderThickness="1" Margin="0,0,0,10"/>
