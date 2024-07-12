@@ -10,19 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\PRN212\View\App.xaml
-<<<<<<< HEAD
 17-332731297
 
 25830569423
 2501013299301
 Admin\Dashboard.xaml;Admin\ManageAccount.xaml;Admin\ManageClinic.xaml;CLinicOwner\AppoinmentManagement.xaml;CLinicOwner\ClinicRegister.xaml;CLinicOwner\CustomerManagement.xaml;CLinicOwner\DentistManagement.xaml;CLinicOwner\DentistRegister.xaml;Component\ClinicInformation.xaml;Component\Login.xaml;Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;DentistPage\AppointmentWeek.xaml;DentistPage\DentistAppointmentHistory.xaml;
-=======
-12-849064152
-
-181237753724
-2501013299301
-Admin\Dashboard.xaml;Admin\ManageAccount.xaml;Admin\ManageClinic.xaml;Component\ClinicInformation.xaml;Component\Login.xaml;Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;DentistPage\AppointmentWeek.xaml;DentistPage\DentistAppointmentHistory.xaml;
->>>>>>> e4eb7d6a9408d7712b8f7ec603569806479d357a
 
 False
 
