@@ -16,5 +16,5 @@ C:\PRN212\View\App.xaml
 2501013299301
 Admin\Dashboard.xaml;Admin\ManageAccount.xaml;Admin\ManageClinic.xaml;CLinicOwner\AppoinmentManagement.xaml;CLinicOwner\ClinicRegister.xaml;CLinicOwner\CustomerManagement.xaml;CLinicOwner\DentistManagement.xaml;CLinicOwner\DentistRegister.xaml;Component\ClinicInformation.xaml;Component\Login.xaml;Customer\AppointmentHistory.xaml;Customer\Booking.xaml;Customer\CustomerPage.xaml;Customer\CustomerRegister.xaml;Customer\DentistryPage.xaml;DentistPage\AppointmentWeek.xaml;DentistPage\DentistAppointmentHistory.xaml;
 
-True
+False
 
