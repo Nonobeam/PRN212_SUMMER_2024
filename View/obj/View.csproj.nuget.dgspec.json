@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj": {}
+    "C:\\PRN212\\View\\View.csproj": {}
   },
   "projects": {
-    "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj": {
+    "C:\\PRN212\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\PRN212\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\84933\\.nuget\\packages\\",
-        "outputPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\obj\\",
+        "projectPath": "C:\\PRN212\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\NGUYEN DUC MINH\\.nuget\\packages\\",
+        "outputPath": "C:\\PRN212\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\84933\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NGUYEN DUC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj": {
+    "C:\\PRN212\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\PRN212\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\84933\\.nuget\\packages\\",
-        "outputPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Service\\obj\\",
+        "projectPath": "C:\\PRN212\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\NGUYEN DUC MINH\\.nuget\\packages\\",
+        "outputPath": "C:\\PRN212\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\84933\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NGUYEN DUC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,8 +118,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj": {
-                "projectPath": "G:\\fu\\kif 5\\prrn\\ver1-prj\\PRN212_SUMMER_2024\\Data\\Data.csproj"
+              "C:\\PRN212\\Data\\Data.csproj": {
+                "projectPath": "C:\\PRN212\\Data\\Data.csproj"
               }
             }
           }
@@ -154,7 +154,91 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PRN212\\View\\View.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PRN212\\View\\View.csproj",
+        "projectName": "View",
+        "projectPath": "C:\\PRN212\\View\\View.csproj",
+        "packagesPath": "C:\\Users\\NGUYEN DUC MINH\\.nuget\\packages\\",
+        "outputPath": "C:\\PRN212\\View\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\NGUYEN DUC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\PRN212\\Data\\Data.csproj": {
+                "projectPath": "C:\\PRN212\\Data\\Data.csproj"
+              },
+              "C:\\PRN212\\Service\\Service.csproj": {
+                "projectPath": "C:\\PRN212\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "OxyPlot.Core": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "OxyPlot.WindowsForms": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "OxyPlot.Wpf": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
