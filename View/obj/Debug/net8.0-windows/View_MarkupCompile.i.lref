@@ -1,5 +1,6 @@
 ﻿
 
+<<<<<<< HEAD
 FC:\PRN212\View\Admin\ManageAccount.xaml;;
 FC:\PRN212\View\Component\ClinicInformation.xaml;;
 FC:\PRN212\View\Customer\AppointmentHistory.xaml;;
@@ -9,4 +10,7 @@ FC:\PRN212\View\Customer\CustomerRegister.xaml;;
 FC:\PRN212\View\Customer\DentistryPage.xaml;;
 FC:\PRN212\View\DentistPage\AppointmentWeek.xaml;;
 FC:\PRN212\View\DentistPage\DentistAppointmentHistory.xaml;;
+=======
+FE:\Nam\PRN212_SUMMER_2024\View\Customer\Booking.xaml;;
+>>>>>>> 6bdb375017ad49304bdcc5a6cfb69207a1b95356
 

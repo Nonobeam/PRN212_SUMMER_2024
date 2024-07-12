@@ -21,22 +21,22 @@
         <Border Grid.Row="0" Background="#007ACC" Padding="10" Margin="0,0,0,20">
             <TextBlock Text="Appointment Booking" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </Border>
-        <TextBlock Grid.Row="1" Text="Clinic:" Margin="29,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
+        <TextBlock Grid.Row="1" Text="Clinic:" Margin="101,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
         <ComboBox x:Name="clinic" Grid.Row="1" Margin="659,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="22" Width="102" />
 
-        <TextBlock Grid.Row="2" Text="Date:" Margin="29,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
+        <TextBlock Grid.Row="2" Text="Date:" Margin="101,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
         <DatePicker x:Name="date" Grid.Row="2" Margin="658,0,29,0" VerticalAlignment="Center" Height="24" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
 
-        <TextBlock Grid.Row="3" Text="Time Slot:" Margin="29,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
+        <TextBlock Grid.Row="3" Text="Time Slot:" Margin="101,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
         <ComboBox x:Name="timeslot" Grid.Row="3" Margin="659,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="22" Width="102" SelectionChanged="Timeslot_SelectionChanged"/>
 
-        <TextBlock Grid.Row="5" Text="Dentist:" Margin="29,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
+        <TextBlock Grid.Row="5" Text="Dentist:" Margin="101,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
         <ComboBox x:Name="dentistlist" Grid.Row="5" Margin="659,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="22" Width="100" />
 
-        <TextBlock Grid.Row="4" Text="Service:" Margin="29,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
+        <TextBlock Grid.Row="4" Text="Service:" Margin="101,0,29,0" VerticalAlignment="Center" Foreground="#007ACC" Height="16"/>
         <ComboBox x:Name="servicelist" Grid.Row="4" Margin="659,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="22" Width="101" SelectionChanged="Servicelist_SelectionChanged"/>
 
-        <Button Grid.Row="6" Content="Book Appointment" Margin="632,12,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,5" Background="#007ACC" Foreground="White" Height="28" Width="122" Click="Button_Click"/>
+        <Button Grid.Row="6" Content="Book Appointment" Margin="375,15,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,5" Background="#007ACC" Foreground="White" Height="28" Width="122" Click="Button_Click"/>
         <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
     </Grid>
 </Window>
