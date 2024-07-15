@@ -43,10 +43,8 @@
             </StackPanel>
             
         </Grid>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
 
-        <Button x:Name="register" Grid.Row="1" FontSize="18" Content="Register" Background="#2C3E50" Foreground="White" FontWeight="Bold" Padding="20,10" Margin="325,294,0,20" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="160" />
-
-
+        <Button x:Name="register" Grid.Row="1" FontSize="18" Content="Register" Background="#2C3E50" Foreground="White" FontWeight="Bold" Padding="20,10" Margin="325,294,0,20" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="160" Click="Button_Click" />
     </Grid>
 </Window>

@@ -44,6 +44,7 @@ ScrollViewer.HorizontalScrollBarVisibility="Auto">
         <Label Content="ID" HorizontalAlignment="Left" Height="25" Margin="10,112,0,0" VerticalAlignment="Top" Width="30"/>
         <TextBlock x:Name="txtId" HorizontalAlignment="Left" Height="26" Margin="47,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
         <Button Content="CLEAR" HorizontalAlignment="Left" Height="30" Margin="832,169,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.48,0.648" Background="#FF34B2DD" Click="Button_Click_1"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="52,35,0,0" VerticalAlignment="Top" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
 
     </Grid>
 </Window>

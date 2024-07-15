@@ -14,6 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using View.Component;
+using View.Customer;
 
 namespace View.CLinicOwner
 {
@@ -24,16 +26,24 @@ namespace View.CLinicOwner
     {
         private CustomerService customerService;
         private UserService userService;
+        private static Data.Entities.User manager;
+
         public CustomerManagement()
         {
+           
+            
+        }
+
+        public CustomerManagement(Data.Entities.User user)
+        {
+            manager = user;
             InitializeComponent();
             customerService = new CustomerService();
             userService = new UserService();
             List<Data.Entities.User> list = customerService.GetAllCustomers().ToList();
             tbCustomer.Items.Clear();
             tbCustomer.ItemsSource = list;
-            cbStatus.ItemsSource   = new List<string> { "Active", "Inactive" };
-            
+            cbStatus.ItemsSource = new List<string> { "Active", "Inactive" };
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -116,6 +126,12 @@ namespace View.CLinicOwner
             txtEmail.Text = "";
             txtPhone.Text = "";
             txtPassword.Text = "";
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerWindow customerPage = new ManagerWindow(manager);
+            customerPage.Show();
+            this.Close();
         }
     }
 }

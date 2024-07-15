@@ -49,6 +49,7 @@ ScrollViewer.HorizontalScrollBarVisibility="Auto" AutoGenerateColumns="False">
         <TextBlock x:Name="txtError" HorizontalAlignment="Left" Height="16" Margin="129,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" Foreground="#FFDC1313"/>
         <Label Content="ClinicId" HorizontalAlignment="Left" Height="25" Margin="190,184,0,0" VerticalAlignment="Top" Width="58"/>
         <TextBox x:Name="txtClinicId" HorizontalAlignment="Left" Height="21" Margin="278,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="52,35,0,0" VerticalAlignment="Top" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
 
     </Grid>
 </Window>

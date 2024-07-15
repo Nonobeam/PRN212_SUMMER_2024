@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using View.Customer;
 
 namespace View.CLinicOwner
 {
@@ -26,25 +27,10 @@ namespace View.CLinicOwner
         private UserService userService;
         private ClinicService clinicService;
         private int id;
+        private static User manager;
+
         public DentistRegister()
         {
-            InitializeComponent();
-            cbStatus.ItemsSource = new List<string> { "Active", "Inactive" };
-            cbStatus.SelectedIndex = 0;
-            clinicService = new ClinicService();
-            List<Clinic> list = clinicService.GetAllClinics().ToList();
-            foreach (Clinic clinic in list)
-            {
-                ComboBoxItem item = new ComboBoxItem
-                {
-                    Content = clinic.Name,
-                    Tag = clinic.Id
-                };
-                cbClinic.Items.Add(item);
-            }
-            cbClinic.SelectedIndex = 0;
-            dentistService = new DentistService();
-            userService = new UserService();
         }
 
         public DentistRegister(int id)
@@ -53,7 +39,7 @@ namespace View.CLinicOwner
             cbStatus.ItemsSource = new List<string> { "Active", "Inactive" };
             this.id = id;
             clinicService = new ClinicService();
-            List<Clinic> list = clinicService.GetAllClinics().ToList();
+            List<Clinic> list = clinicService.GetAllClinicsByManager(manager.Id).ToList();
             foreach (Clinic clinic in list)
             {
                 ComboBoxItem item = new ComboBoxItem
@@ -71,6 +57,29 @@ namespace View.CLinicOwner
             txtEmail.Text = user.Email;
             txtPassword.Text = user.Password;
             cbStatus.SelectedIndex = user.Available;
+        }
+
+        public DentistRegister(User user)
+        {
+            manager = user;
+
+            InitializeComponent();
+            cbStatus.ItemsSource = new List<string> { "Active", "Inactive" };
+            cbStatus.SelectedIndex = 0;
+            clinicService = new ClinicService();
+            List<Clinic> list = clinicService.GetAllClinicsByManager(manager.Id).ToList();
+            foreach (Clinic clinic in list)
+            {
+                ComboBoxItem item = new ComboBoxItem
+                {
+                    Content = clinic.Name,
+                    Tag = clinic.Id
+                };
+                cbClinic.Items.Add(item);
+            }
+            cbClinic.SelectedIndex = 0;
+            dentistService = new DentistService();
+            userService = new UserService();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -134,7 +143,7 @@ namespace View.CLinicOwner
                             (dentist);
 
                     }
-                    DentistManagement management = new DentistManagement();
+                    DentistManagement management = new DentistManagement(manager);
                     management.Show();
                     this.Close();
                 }
@@ -149,8 +158,14 @@ namespace View.CLinicOwner
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            DentistManagement dentistManagement = new DentistManagement();
+            DentistManagement dentistManagement = new DentistManagement(manager);
             dentistManagement.Show();
+            this.Close();
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerWindow customerPage = new ManagerWindow(manager);
+            customerPage.Show();
             this.Close();
         }
     }

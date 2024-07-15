@@ -31,9 +31,13 @@ namespace Data.Repository
 
         public IEnumerable<Appointment> GetAllAppointments() {
             _context = new();
-            return _context.Appointments;
+            return _context.Appointments ;
         }
-
+        public IEnumerable<Appointment> GetAllAppointmentsByManger(int id)
+        {
+            _context = new();
+            return _context.Appointments.Where(a => a.Clinic.ManagerId == id);
+        }
 
         public IEnumerable<Appointment> GetAppointmentByDate(DateTime? date, Clinic? clinic)
         {

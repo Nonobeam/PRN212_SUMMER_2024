@@ -95,7 +95,7 @@ namespace View.DentistPage
 
         private void Appointment_Click(object sender, RoutedEventArgs e)
         {
-            AppointmentWeek appointmentWeek = new AppointmentWeek();
+            AppointmentWeek appointmentWeek = new AppointmentWeek(currentDentist);
             appointmentWeek.Show();
             this.Close();
         }

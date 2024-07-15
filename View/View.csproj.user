@@ -28,6 +28,9 @@
     <Compile Update="CLinicOwner\DentistRegister.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CLinicOwner\ManagerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Component\ClinicInformation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -79,6 +82,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CLinicOwner\DentistRegister.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\ManagerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Component\ClinicInformation.xaml">

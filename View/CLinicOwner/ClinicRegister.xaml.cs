@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using View.Customer;
 
 namespace View.CLinicOwner
 {
@@ -23,8 +24,16 @@ namespace View.CLinicOwner
     public partial class ClinicRegister : Window
     {
         private ClinicService clinicService;
+        private static User manager;
+
         public ClinicRegister()
         {
+           
+        }
+
+        public ClinicRegister(User user)
+        {
+            manager = user;
             InitializeComponent();
             cbAvailable.ItemsSource = new List<string> { "Active", "Inactive" };
             cbAvailable.SelectedIndex = 0;
@@ -36,10 +45,9 @@ namespace View.CLinicOwner
             string name = txtName.Text;
             string address = txtAddress.Text;
             string phone = txtPhone.Text;
-            string managerId = txtManagerId.Text;
 
             if(name == null || name.Length == 0 || address == null || address.Length == 0 || 
-                phone == null || phone.Length ==0 || managerId == null || managerId.Length == 0 ) {
+                phone == null || phone.Length ==0) {
                 txtError.Text = "Please complete all field!";
             }
             else
@@ -48,8 +56,7 @@ namespace View.CLinicOwner
                 clinic.Name = name;
                 clinic.Address = address;
                 clinic.Phone = phone;
-                int id = int.Parse(managerId);
-                clinic.ManagerId = id;
+                clinic.ManagerId = manager.Id;
                 string status = cbAvailable.Text;
                 int available = 0;
                 if(status == "Active")
@@ -66,6 +73,12 @@ namespace View.CLinicOwner
                 }
                
             }
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerWindow customerPage = new ManagerWindow(manager);
+            customerPage.Show();
+            this.Close();
         }
     }
 }

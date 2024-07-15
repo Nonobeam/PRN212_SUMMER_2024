@@ -16,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using View.Customer;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace View.CLinicOwner
@@ -30,9 +31,17 @@ namespace View.CLinicOwner
         private DentistService dentistService;
         private ServiceService serviceService;
         private ClinicService clinicService;
+        private static Data.Entities.User manager;
 
         public AppoinmentManagement()
         {
+            
+
+        }
+
+        public AppoinmentManagement(Data.Entities.User i)
+        {
+            manager = i;
             InitializeComponent();
             this.appointmentService = new AppointmentService();
             this.userService = new UserService();
@@ -118,7 +127,7 @@ namespace View.CLinicOwner
 
         private void listAppoinment()
         {
-            List<Appointment> list = appointmentService.GetAllAppointments().ToList();
+            List<Appointment> list = appointmentService.GetAllAppointmentsByManager(manager.Id).ToList();
             List<AppoinmentDto> listDto = new List<AppoinmentDto>();
             cbStatus.ItemsSource = new List<string> { "Active", "Inactive" };
             foreach (Appointment appointment in list)
@@ -135,6 +144,12 @@ namespace View.CLinicOwner
                 listDto.Add(dto);
             }
             tbAppoinment.ItemsSource = listDto;
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerWindow customerPage = new ManagerWindow(manager);
+            customerPage.Show();
+            this.Close();
         }
     }
 }

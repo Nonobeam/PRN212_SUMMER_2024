@@ -3,6 +3,7 @@ using Service;
 using System.IO;
 using System.Windows;
 using View.Admin;
+using View.CLinicOwner;
 using View.Customer;
 using View.DentistPage;
 
@@ -46,10 +47,10 @@ namespace View.Component
                         AppointmentWeek dentistWindow = new AppointmentWeek(user);
                         dentistWindow.Show();
                         break;
-/*                    case "Manager":
-                        ManagerWindow managerWindow = new ManagerWindow();
+                    case "Manager":
+                        ManagerWindow managerWindow = new ManagerWindow(user);
                         managerWindow.Show();
-                        break;*/
+                        break;
                     default:
                         MessageBox.Show("Unknown UserType", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         break;

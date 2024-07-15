@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using View.Customer;
 
 namespace View.CLinicOwner
 {
@@ -25,15 +26,24 @@ namespace View.CLinicOwner
         private DentistService dentistService;
         private UserService userService;
         private ClinicService clinicService;
+        private static User manager;
+
         public DentistManagement()
         {
+           
+        }
+
+        public DentistManagement(User manager1)
+        {
+            manager = manager1;
             InitializeComponent();
             dentistService = new DentistService();
             List<Dentist> list = dentistService.GetAllDentists().ToList();
             userService = new UserService();
             clinicService = new ClinicService();
             List<DentistDto> listDto = new List<DentistDto>();
-            foreach (Dentist dentist in list){
+            foreach (Dentist dentist in list)
+            {
                 DentistDto dto = new DentistDto();
                 User user = userService.GetUserById(dentist.UserId);
                 dto.Id = user.Id;
@@ -51,7 +61,7 @@ namespace View.CLinicOwner
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            DentistRegister register = new DentistRegister();
+            DentistRegister register = new DentistRegister(manager);
             register.Show();
             this.Close();
         }
@@ -62,6 +72,12 @@ namespace View.CLinicOwner
             int id = (int)button.Tag;
             DentistRegister register = new DentistRegister(id);
             register.Show();
+            this.Close();
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            ManagerWindow customerPage = new ManagerWindow(manager);
+            customerPage.Show();
             this.Close();
         }
     }

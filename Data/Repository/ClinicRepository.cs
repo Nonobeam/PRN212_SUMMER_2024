@@ -69,5 +69,12 @@ namespace Data.Repository
                 return clinic;
             }
         }
+
+        public IEnumerable<Clinic> GetAllClinicsByManager(int id)
+        {
+            _context = new();
+            return _context.Clinics
+                       .Where(c => c.ManagerId==id);
+        }
     }
 }

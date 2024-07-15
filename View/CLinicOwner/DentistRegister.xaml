@@ -31,5 +31,7 @@
         <Button Content="Save" HorizontalAlignment="Left" Height="33" Margin="96,398,0,0" VerticalAlignment="Top" Width="104" Background="#FF57ADDD" FontSize="16" Click="Button_Click"/>
         <Button Content="Cancel" HorizontalAlignment="Left" Height="33" Margin="238,398,0,0" VerticalAlignment="Top" Width="104" Background="#FF2BA9E6" FontSize="16" Click="Button_Click_1"/>
         <TextBlock x:Name="txtError" HorizontalAlignment="Left" Height="23" Margin="125,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Foreground="#FFEB1616" FontSize="16"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Height="32" Width="84" Background="#FF1D4A4F" FontFamily="Tahoma" FontWeight="Bold" FontSize="14" Foreground="#FFEEE3E3" Click="Back_Click"/>
+
     </Grid>
 </Window>

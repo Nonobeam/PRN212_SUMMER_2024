@@ -34,6 +34,11 @@ namespace Service
             return clinicRepository.GetAllClinics();
         }
 
+        public IEnumerable<Clinic> GetAllClinicsByManager(int id)
+        {
+            return clinicRepository.GetAllClinicsByManager(id);
+        }
+
 
         public int ChangeClinicAvailable(int id, int available)
         {
