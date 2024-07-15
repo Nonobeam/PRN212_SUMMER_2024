@@ -13,7 +13,8 @@ namespace Data.Repository
         private PrnProjectContext _context;
         private static ClinicRepository instance;
 
-        public ClinicRepository(){}
+        public ClinicRepository(){
+        }
         
         public static ClinicRepository GetInstance()
         {
@@ -42,6 +43,7 @@ namespace Data.Repository
         {
             _context = new();
             _context.Add(clinic);
+            _context.SaveChanges();
         }
 
         public int ChangeClinicAvailable(int id, int available)
@@ -59,10 +61,20 @@ namespace Data.Repository
             return 0;
         }
 
-        public Clinic GetClinicById(int clinicId)
+        public Clinic? GetClinicById(int clinicId)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                var clinic = context.Clinics.FirstOrDefault(u => u.Id == clinicId);
+                return clinic;
+            }
+        }
+
+        public IEnumerable<Clinic> GetAllClinicsByManager(int id)
         {
             _context = new();
-            return _context.Clinics.FirstOrDefault(u => u.Id == clinicId);
+            return _context.Clinics
+                       .Where(c => c.ManagerId==id);
         }
     }
 }

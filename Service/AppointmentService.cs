@@ -28,6 +28,10 @@ namespace Service
         {
             return appointmentRepository.GetAllAppointments();
         }
+        public IEnumerable<Appointment> GetAllAppointmentsByManager(int id)
+        {
+            return appointmentRepository.GetAllAppointmentsByManger(id);
+        }
 
         public IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId)
         {
@@ -37,6 +41,16 @@ namespace Service
         public IEnumerable<Appointment> GetAppointmentsByClinicId(int clinicId)
         {
             return appointmentRepository.GetAppointmentsByClinicId(clinicId);
+        }
+
+        public void AddAppoinment(Appointment appointment)
+        {
+            appointmentRepository.save(appointment);
+        }
+
+        public Appointment GetAppointment(int id)
+        {
+            return appointmentRepository.GetAppointmentById(id);
         }
     }
 }

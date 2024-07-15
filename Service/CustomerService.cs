@@ -31,5 +31,6 @@ namespace Service
             string customer = "Customer";
             return userRepository.GetAllUsersByType(customer);
         }
+
     }
 }

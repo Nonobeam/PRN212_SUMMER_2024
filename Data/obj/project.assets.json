@@ -4411,19 +4411,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NGUYEN DUC MINH\\.nuget\\packages\\": {}
+    "C:\\Users\\84933\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PRN212\\Data\\Data.csproj",
+      "projectUniqueName": "G:\\fu\\kif 5\\prrn\\PRN212\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\PRN212\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\NGUYEN DUC MINH\\.nuget\\packages\\",
-      "outputPath": "C:\\PRN212\\Data\\obj\\",
+      "projectPath": "G:\\fu\\kif 5\\prrn\\PRN212\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\84933\\.nuget\\packages\\",
+      "outputPath": "G:\\fu\\kif 5\\prrn\\PRN212\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NGUYEN DUC MINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\84933\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4499,7 +4499,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -32,5 +32,13 @@ namespace Data.Repository
             prnProjectContext = new();
             return prnProjectContext.Services.ToList();
         }
+
+        public Service GetService(int id)
+        {
+            using(var context = new PrnProjectContext())
+            {
+                return context.Services.SingleOrDefault(s => s.Id == id);
+            }
+        }
     }
 }

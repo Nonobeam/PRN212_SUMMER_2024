@@ -15,5 +15,9 @@ namespace Data.Repository
         void DeleteAppointmentById(int id);
         IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId);
         IEnumerable<Appointment> GetAllAppointments();
+
+        void save(Appointment appointment);
+
+        Appointment GetAppointmentById(int id);
     }
 }

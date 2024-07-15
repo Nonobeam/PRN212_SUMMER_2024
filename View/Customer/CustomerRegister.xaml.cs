@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using Microsoft.IdentityModel.Tokens;
 using Service;
 using System;
 using System.Collections.Generic;
@@ -31,11 +32,11 @@ namespace View.Customer
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(username!= null && mail != null && phone !=null && password !=null && confirmPassword != null)
+            if (!username.Text.IsNullOrEmpty() && !mail.Text.IsNullOrEmpty() && !phone.Text.IsNullOrEmpty() && !password.Password.IsNullOrEmpty() && !confirmPassword.Password.IsNullOrEmpty())
             {
                 if (confirmPassword != password)
                 {
-                    if (!IsExistByMailOrPhone(mail,phone))
+                    if (!IsExistByMailOrPhone(mail, phone))
                     {
                         User customer = new User();
                         customer.Name = username.Text;
@@ -50,10 +51,11 @@ namespace View.Customer
                         Login login = new Login();
                         login.Show();
                     }
-                    else MessageBox.Show("Mail already exist account int he system");
+                    else MessageBox.Show("Mail already exist account int the system");
                 }
                 else MessageBox.Show("Confirm Password isn't matched");
-            } else
+            }
+            else
             {
                 MessageBox.Show("You should input all required fields");
             }
@@ -68,8 +70,15 @@ namespace View.Customer
             }
             else
             {
-                 return false;
+                return false;
             }
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

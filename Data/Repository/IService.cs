@@ -10,5 +10,7 @@ namespace Data.Repository
     internal interface IService
     {
         IEnumerable<Service> GetAllService();
+
+        Service GetService(int id);
     }
 }

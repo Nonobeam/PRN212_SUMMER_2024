@@ -11,7 +11,6 @@ namespace Data.Repository
     {
         private PrnProjectContext _context;
         private static DentistRepository instance;
-
         public DentistRepository(PrnProjectContext context)
         {
             _context = context;
@@ -45,5 +44,24 @@ namespace Data.Repository
                 return context.Dentists.ToList();
             }
         }
+
+        public void save(Dentist dentist)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                context.Dentists.Add(dentist);
+                context.SaveChanges();
+            }
+        }
+
+        public void update(Dentist dentist)
+        {
+            using (var context = new PrnProjectContext())
+            {
+                context.Dentists.Update(dentist);
+                context.SaveChanges();
+            }
+        }
+
     }
 }

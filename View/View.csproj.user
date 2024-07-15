@@ -13,6 +13,24 @@
     <Compile Update="Admin\ManageAccount.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CLinicOwner\AppoinmentManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CLinicOwner\ClinicRegister.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CLinicOwner\CustomerManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CLinicOwner\DentistManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CLinicOwner\DentistRegister.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CLinicOwner\ManagerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Component\ClinicInformation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +67,24 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\ManageClinic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\AppoinmentManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\ClinicRegister.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\CustomerManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\DentistManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\DentistRegister.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CLinicOwner\ManagerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Component\ClinicInformation.xaml">

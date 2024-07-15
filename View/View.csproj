@@ -10,12 +10,16 @@
 
   <ItemGroup>
     <Compile Remove="Dentist\**" />
+    <Compile Remove="Manager\**" />
     <Compile Remove="Owner\**" />
     <EmbeddedResource Remove="Dentist\**" />
+    <EmbeddedResource Remove="Manager\**" />
     <EmbeddedResource Remove="Owner\**" />
     <None Remove="Dentist\**" />
+    <None Remove="Manager\**" />
     <None Remove="Owner\**" />
     <Page Remove="Dentist\**" />
+    <Page Remove="Manager\**" />
     <Page Remove="Owner\**" />
   </ItemGroup>
 
@@ -28,10 +32,6 @@
     <PackageReference Include="OxyPlot.Core" Version="2.1.2" />
     <PackageReference Include="OxyPlot.WindowsForms" Version="2.1.2" />
     <PackageReference Include="OxyPlot.Wpf" Version="2.1.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Manager\" />
   </ItemGroup>
 
 </Project>

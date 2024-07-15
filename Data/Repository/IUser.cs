@@ -19,5 +19,7 @@ namespace Data.Repository
         IEnumerable<User> GetAllUsers();
         public User GetUserByEmail(String email);
 
+        void deleteUserById(int id);
+
     }
 }
