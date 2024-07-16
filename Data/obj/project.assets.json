@@ -4411,19 +4411,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\84933\\.nuget\\packages\\": {}
+    "C:\\Users\\kinnamss\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\fu\\kif 5\\prrn\\PRN212\\Data\\Data.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\Uni\\2024SUMMER\\PRN212\\PRN212_SUMMER_2024\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "G:\\fu\\kif 5\\prrn\\PRN212\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\84933\\.nuget\\packages\\",
-      "outputPath": "G:\\fu\\kif 5\\prrn\\PRN212\\Data\\obj\\",
+      "projectPath": "\\\\Mac\\Home\\Documents\\Uni\\2024SUMMER\\PRN212\\PRN212_SUMMER_2024\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\kinnamss\\.nuget\\packages\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\Uni\\2024SUMMER\\PRN212\\PRN212_SUMMER_2024\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\84933\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kinnamss\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
