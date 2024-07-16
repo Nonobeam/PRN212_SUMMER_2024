@@ -47,9 +47,11 @@ namespace View.Customer
                         userService = UserService.GetInstance();
                         userService.AddUser(customer);
                         MessageBox.Show("Create Account successfully");
-                        this.Close();
                         Login login = new Login();
                         login.Show();
+
+                        this.Close();
+  
                     }
                     else MessageBox.Show("Mail already exist account int the system");
                 }

@@ -1,12 +1,14 @@
 ﻿using Data;
 using Data.Entities;
 using Service;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using View.Component;
 using View.Customer;
-
 
 namespace View.DentistPage
 {
@@ -67,10 +69,17 @@ namespace View.DentistPage
 
         private DateTime getStartOfWeek()
         {
-            // Find the monday date of curren week
             DateTime today = DateTime.Today;
             int daysUntilMonday = ((int)DayOfWeek.Monday - (int)today.DayOfWeek + 7) % 7;
             DateTime monday = today.AddDays(daysUntilMonday - 7);
+
+            return monday;
+        }
+
+        private DateTime getStartOfWeek(DateTime date)
+        {
+            int daysUntilMonday = ((int)DayOfWeek.Monday - (int)date.DayOfWeek + 7) % 7;
+            DateTime monday = date.AddDays(-((int)date.DayOfWeek - (int)DayOfWeek.Monday));
 
             return monday;
         }
@@ -93,7 +102,6 @@ namespace View.DentistPage
                     context.Entry(appointment).Reference(a => a.Customer).Load();
                     context.Entry(appointment).Reference(a => a.Service).Load();
                     context.Entry(appointment.Customer).Reference(c => c.User).Load();
-
 
                     if (appointment.Date.Equals(monday))
                     {
@@ -145,6 +153,41 @@ namespace View.DentistPage
             DentistAppointmentHistory appointmentHistory = new DentistAppointmentHistory(currentDentist);
             appointmentHistory.Show();
             this.Close();
+        }
+
+        private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DateTime selectedDate = (DateTime)((DatePicker)sender).SelectedDate;
+            DateTime startOfWeek = getStartOfWeek(selectedDate);
+
+            MondayDate = startOfWeek;
+            TuesdayDate = MondayDate.AddDays(1);
+            WednesdayDate = MondayDate.AddDays(2);
+            ThursdayDate = MondayDate.AddDays(3);
+            FridayDate = MondayDate.AddDays(4);
+            SaturdayDate = MondayDate.AddDays(5);
+            SundayDate = MondayDate.AddDays(6);
+
+            ClearAppointments();
+            LoadAppointments(currentDentist);
+            OnPropertyChanged(nameof(MondayDate));
+            OnPropertyChanged(nameof(TuesdayDate));
+            OnPropertyChanged(nameof(WednesdayDate));
+            OnPropertyChanged(nameof(ThursdayDate));
+            OnPropertyChanged(nameof(FridayDate));
+            OnPropertyChanged(nameof(SaturdayDate));
+            OnPropertyChanged(nameof(SundayDate));
+        }
+
+        private void ClearAppointments()
+        {
+            MondayAppointments.Clear();
+            TuesdayAppointments.Clear();
+            WednesdayAppointments.Clear();
+            ThursdayAppointments.Clear();
+            FridayAppointments.Clear();
+            SaturdayAppointments.Clear();
+            SundayAppointments.Clear();
         }
 
         protected virtual void OnPropertyChanged(string propertyName)

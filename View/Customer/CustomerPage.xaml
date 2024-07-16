@@ -8,7 +8,7 @@
         Title="CustomerPage" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="G:\fu\kif 5\prrn\ver1-prj\PRN212_SUMMER_2024\View\Customer\tech-800-Dec2018-920x613.jpg" Stretch="UniformToFill" TileMode="None"/>
+            <ImageBrush ImageSource="tech-800-Dec2018-920x613.jpg" Stretch="UniformToFill" TileMode="None"/>
         </Grid.Background>
         <Button x:Name="logout"
             Content="Logout"
