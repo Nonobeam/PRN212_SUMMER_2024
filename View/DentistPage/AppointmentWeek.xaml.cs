@@ -54,7 +54,7 @@ namespace View.DentistPage
             SaturdayAppointments = new ObservableCollection<Appointment>();
             SundayAppointments = new ObservableCollection<Appointment>();
 
-            DateTime startOfWeek = getStartOfWeek();
+            DateTime startOfWeek = GetStartOfWeek();
 
             MondayDate = startOfWeek;
             TuesdayDate = MondayDate.AddDays(1);
@@ -64,10 +64,10 @@ namespace View.DentistPage
             SaturdayDate = MondayDate.AddDays(5);
             SundayDate = MondayDate.AddDays(6);
 
-            LoadAppointments(dentist);
+            LoadAppointments(dentist, MondayDate, SundayDate);
         }
 
-        private DateTime getStartOfWeek()
+        private DateTime GetStartOfWeek()
         {
             DateTime today = DateTime.Today;
             int daysUntilMonday = ((int)DayOfWeek.Monday - (int)today.DayOfWeek + 7) % 7;
@@ -76,7 +76,7 @@ namespace View.DentistPage
             return monday;
         }
 
-        private DateTime getStartOfWeek(DateTime date)
+        private DateTime GetStartOfWeek(DateTime date)
         {
             int daysUntilMonday = ((int)DayOfWeek.Monday - (int)date.DayOfWeek + 7) % 7;
             DateTime monday = date.AddDays(-((int)date.DayOfWeek - (int)DayOfWeek.Monday));
@@ -84,17 +84,15 @@ namespace View.DentistPage
             return monday;
         }
 
-        private void LoadAppointments(User dentist)
+        private void LoadAppointments(User dentist, DateTime startOfWeek, DateTime endOfWeek)
         {
             int dentistId = dentist.Id;
 
             using (var context = new PrnProjectContext())
             {
                 var appointments = context.Appointments
-                                          .Where(a => a.DentistId == dentistId && a.Date >= MondayDate && a.Date <= SundayDate)
+                                          .Where(a => a.DentistId == dentistId && a.Date >= startOfWeek && a.Date <= endOfWeek)
                                           .ToList();
-
-                DateTime monday = getStartOfWeek();
 
                 foreach (var appointment in appointments)
                 {
@@ -103,31 +101,31 @@ namespace View.DentistPage
                     context.Entry(appointment).Reference(a => a.Service).Load();
                     context.Entry(appointment.Customer).Reference(c => c.User).Load();
 
-                    if (appointment.Date.Equals(monday))
+                    if (appointment.Date == startOfWeek)
                     {
                         MondayAppointments.Add(appointment);
                     }
-                    else if (appointment.Date.Equals(monday.AddDays(1)))
+                    else if (appointment.Date == startOfWeek.AddDays(1))
                     {
                         TuesdayAppointments.Add(appointment);
                     }
-                    else if (appointment.Date.Equals(monday.AddDays(2)))
+                    else if (appointment.Date == startOfWeek.AddDays(2))
                     {
                         WednesdayAppointments.Add(appointment);
                     }
-                    else if (appointment.Date.Equals(monday.AddDays(3)))
+                    else if (appointment.Date == startOfWeek.AddDays(3))
                     {
                         ThursdayAppointments.Add(appointment);
                     }
-                    else if (appointment.Date.Equals(monday.AddDays(4)))
+                    else if (appointment.Date == startOfWeek.AddDays(4))
                     {
                         FridayAppointments.Add(appointment);
                     }
-                    else if (appointment.Date.Equals(monday.AddDays(5)))
+                    else if (appointment.Date == startOfWeek.AddDays(5))
                     {
                         SaturdayAppointments.Add(appointment);
                     }
-                    else if (appointment.Date.Equals(monday.AddDays(6)))
+                    else if (appointment.Date == startOfWeek.AddDays(6))
                     {
                         SundayAppointments.Add(appointment);
                     }
@@ -145,20 +143,20 @@ namespace View.DentistPage
         {
             Login login = new Login();
             login.Show();
-            this.Close();
+            Close();
         }
 
         private void History_Click(object sender, RoutedEventArgs e)
         {
             DentistAppointmentHistory appointmentHistory = new DentistAppointmentHistory(currentDentist);
             appointmentHistory.Show();
-            this.Close();
+            Close();
         }
 
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             DateTime selectedDate = (DateTime)((DatePicker)sender).SelectedDate;
-            DateTime startOfWeek = getStartOfWeek(selectedDate);
+            DateTime startOfWeek = GetStartOfWeek(selectedDate);
 
             MondayDate = startOfWeek;
             TuesdayDate = MondayDate.AddDays(1);
@@ -169,7 +167,8 @@ namespace View.DentistPage
             SundayDate = MondayDate.AddDays(6);
 
             ClearAppointments();
-            LoadAppointments(currentDentist);
+            LoadAppointments(currentDentist, MondayDate, SundayDate);
+
             OnPropertyChanged(nameof(MondayDate));
             OnPropertyChanged(nameof(TuesdayDate));
             OnPropertyChanged(nameof(WednesdayDate));
