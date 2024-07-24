@@ -42,11 +42,16 @@ namespace View.Customer
             var datePicker = sender as DatePicker;
             if (datePicker != null)
             {
-                if (datePicker.SelectedDate != null && clinic.SelectedValue!=null)
+                if(date.SelectedDate != null && date.SelectedDate >= DateTime.Now)
                 {
-                    timeslot.ItemsSource = TimeSlotOptions(datePicker.SelectedDate, (Clinic)clinic.SelectedItem);
-                    timeslot.DisplayMemberPath = "Time";
-                }
+                    if (clinic.SelectedValue != null)
+                    {
+                        timeslot.ItemsSource = TimeSlotOptions(date.SelectedDate, (Clinic)clinic.SelectedItem);
+                        timeslot.DisplayMemberPath = "Time";
+                    }
+                }                    else MessageBox.Show("You have to select future or present date");
+
+                
             }
         }
         private IEnumerable<TimeSlot?> TimeSlotOptions(DateTime? selectedDate, Clinic clinic)

@@ -24,7 +24,7 @@ public partial class Appointment
     {
         get
         {
-            return Available == 0 ? "Active" : "Inactive";
+            return Available == 1 ? "Active" : "Inactive";
         }
     }
     public virtual Clinic? Clinic { get; set; }

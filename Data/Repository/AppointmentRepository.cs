@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System;
 
 namespace Data.Repository
 {
@@ -39,18 +40,13 @@ namespace Data.Repository
             return _context.Appointments.Where(a => a.Clinic.ManagerId == id);
         }
 
-        public IEnumerable<Appointment> GetAppointmentByDate(DateTime? date, Clinic? clinic)
+        public IEnumerable<Appointment> GetAppointmentByDate(DateOnly? date, Clinic? clinic)
         {
             _context = new();
-            return _context.Appointments.Where(a => a.Date == date && a.Clinic == clinic && a.Available == 1).ToList();
+            return _context.Appointments.Where(a => DateOnly.FromDateTime((DateTime)a.Date)==(date) && a.Clinic.Id == clinic.Id && a.Available == 1).ToList();
         }
 
-        public IEnumerable<Appointment> GetAppointmentByDateAndTimeSlot(DateTime? selectedDate, Clinic? clinicSelect, TimeSlot? timeSlotSelection)
-        {
-            _context = new();
-            return _context.Appointments.Where(a => a.Date == selectedDate && a.Clinic == clinicSelect && a.TimeSlot == timeSlotSelection && a.Available == 1);
-        }
-
+    
         public void MakeAppointment(Appointment appointment)
         {
             _context = new();
@@ -114,6 +110,18 @@ namespace Data.Repository
         {
             _context = new();
             return _context.Appointments.FirstOrDefault(a => a.Id == id);
+        }
+
+        public IEnumerable<Appointment> GetAppointmentByDateAndTimeSlot(DateTime selectedDay, int id, int cid)
+        {
+            _context = new();
+            return _context.Appointments.Include(a=>a.Dentist)
+                .Include(S=>S.Clinic)
+                .Include(e => e.Service)
+                .Include(t => t.TimeSlot)
+                .Include(c=>c.Customer).
+                Where(a => a.Date == (selectedDay) && a.Clinic.Id == cid && a.TimeSlot.Id == id && a.Available == 1).ToList();
+
         }
     }
 }

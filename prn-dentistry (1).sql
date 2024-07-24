@@ -147,12 +147,7 @@ GO
 INSERT [dbo].[Clinic] ([Id], [Name], [Address], [Phone], [ManagerId], [available]) VALUES (6, N'Helpright', N'789 Odals,Green wood', N'9968685766', 18, 1)
 GO
 SET IDENTITY_INSERT [dbo].[Clinic] OFF
-GO
-INSERT [dbo].[Customer] ([UserId]) VALUES (1)
-GO
-INSERT [dbo].[Customer] ([UserId]) VALUES (2)
-GO
-INSERT [dbo].[Customer] ([UserId]) VALUES (6)
+
 GO
 INSERT [dbo].[Dentist] ([UserId], [ClinicId]) VALUES (4, 1)
 GO
@@ -298,6 +293,56 @@ GO
 ALTER TABLE [dbo].[Manager]  WITH CHECK ADD FOREIGN KEY([UserId])
 REFERENCES [dbo].[User] ([Id])
 GO
+CREATE TRIGGER trg_InsertAdmin
+ON dbo.[User]
+AFTER INSERT
+AS
+BEGIN
+    IF EXISTS (SELECT * FROM inserted WHERE UserType = 'Admin')
+    BEGIN
+        INSERT INTO dbo.Admin (UserId)
+        SELECT Id FROM inserted WHERE UserType = 'Admin';
+    END
+END
+GO
+
+CREATE TRIGGER trg_InsertCustomer
+ON dbo.[User]
+AFTER INSERT
+AS
+BEGIN
+    IF EXISTS (SELECT * FROM inserted WHERE UserType = 'Customer')
+    BEGIN
+        INSERT INTO dbo.Customer (UserId)
+        SELECT Id FROM inserted WHERE UserType = 'Customer';
+    END
+END
+GO
+CREATE TRIGGER trg_InsertDentist
+ON dbo.[User]
+AFTER INSERT
+AS
+BEGIN
+    IF EXISTS (SELECT * FROM inserted WHERE UserType = 'Dentist')
+    BEGIN
+        INSERT INTO dbo.Dentist (UserId)
+        SELECT Id FROM inserted WHERE UserType = 'Dentist';
+    END
+END
+GO
+CREATE TRIGGER trg_InsertManager
+ON dbo.[User]
+AFTER INSERT
+AS
+BEGIN
+    IF EXISTS (SELECT * FROM inserted WHERE UserType = 'Manager')
+    BEGIN
+        INSERT INTO dbo.Manager (UserId)
+        SELECT Id FROM inserted WHERE UserType = 'Manager';
+    END
+END
+GO
+
 USE [master]
 GO
 ALTER DATABASE [prn_project] SET  READ_WRITE 

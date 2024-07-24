@@ -1,5 +1,7 @@
 ﻿using Data.Entities;
 using Data.Repository;
+using System;
+using System.Diagnostics;
 namespace Service
 {
     public class BookingService
@@ -33,7 +35,8 @@ namespace Service
         public IEnumerable<TimeSlot?> GetTimeSlotForBooking(DateTime? selectedDate, Clinic clinic)
         {
             IEnumerable<TimeSlot> timeSlotsForBook = timeslotRepository.GetSlots();
-            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDate(selectedDate, clinic);
+            DateOnly? selectedDay = selectedDate.HasValue ? DateOnly.FromDateTime(selectedDate.Value) : (DateOnly?)null;
+            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDate(selectedDay, clinic);
             var bookedTimeSlots = getBooked.Where(book => book != null)
                                .Select(book => book.TimeSlot);
 
@@ -49,13 +52,20 @@ namespace Service
 
         public IEnumerable<Dentist> GetDentistListForBooking(TimeSlot? timeSlotSelection, Clinic? clinicSelect, DateTime? selectedDate)
         {
-            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDateAndTimeSlot(selectedDate, clinicSelect, timeSlotSelection);
+            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDateAndTimeSlot((DateTime)selectedDate, timeSlotSelection.Id, clinicSelect.Id);
+            Console.WriteLine(getBooked);
             IEnumerable<Dentist> dentists = userRepository.GetDentistsByClinic(clinicSelect.Id);
-            var bookedDentist = getBooked.Select(book => book.Dentist);
-            var availableDentist = dentists.Except(bookedDentist);
-            return availableDentist;
+            IEnumerable<Dentist> UnavailableDentist = getBooked
+                .Select(book => book.Dentist)
+                .ToList(); 
+            dentists = dentists.Except(UnavailableDentist).ToList();
+            return dentists;
         }
-
+        public int Tes(int id, int cid, DateTime? selectedDate)
+        {
+            IEnumerable<Appointment> getBooked = appointmentRepository.GetAppointmentByDateAndTimeSlot((DateTime)selectedDate, id, cid);
+            return getBooked.Count();
+        }
         public IEnumerable<Data.Entities.Service> GetServiceForBooking()
         {
             return serviceRepository.GetAllService();

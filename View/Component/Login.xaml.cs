@@ -13,7 +13,7 @@ namespace View.Component
     {
         private static User user;
         private UserService userService;
-
+        private BookingService service;
         public Login()
         {
             InitializeComponent();
@@ -32,7 +32,8 @@ namespace View.Component
             {
                 String welcome = "Login Successful.\nWelcome back " + user.Name;
                 MessageBox.Show(welcome, "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-
+                string dateString = "2024-07-24 12:00:00";
+                DateTime? parsedDate = DateTime.Parse(dateString);
                 switch (user.UserType)
                 {
                     case "Admin":

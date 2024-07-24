@@ -9,8 +9,8 @@ namespace Data.Repository
 {
     public interface IAppointment
     {
-        IEnumerable<Appointment> GetAppointmentByDate(DateTime? date, Clinic? clinic);
-        IEnumerable<Appointment> GetAppointmentByDateAndTimeSlot(DateTime? selectedDate, Clinic? clinicSelect, TimeSlot? timeSlotSelection);
+        IEnumerable<Appointment> GetAppointmentByDate(DateOnly? date, Clinic? clinic);
+        IEnumerable<Appointment> GetAppointmentByDateAndTimeSlot(DateTime selectedDate, int clinicSelect, int timeSlotSelection);
         void MakeAppointment(Appointment appointment);
         void DeleteAppointmentById(int id);
         IEnumerable<Appointment> GetAppointmentsByDentist(int dentistId);
